@@ -1,0 +1,5397 @@
+{
+    "flightCode": "LA2694",
+    "uniqId": "LIM-MIA",
+    "offers": [
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 12,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "12F",
+            "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 60.17,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 10.83,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 71,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 12,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "12L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Extra Space",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "13C",
+            "offerId": "874768897357d202e8dc4e1e551863b04e192c5d9a550aeb1729f888db7395a4",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 13,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 13,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "13L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "14A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "14C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 14,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "14D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "14F",
+            "offerId": "4312be6440e861b7d2781ae764c09b0527587c99e236f33d38b79df4a81c8547",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 60.17,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 10.83,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 71,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "14H",
+            "offerId": "876d7743959c0e0425dfd160912fe753ee8a958d384f387f327f72d578bc43b2",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 14,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "14J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "14L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 15,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 15,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "15L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "16A",
+            "offerId": "f3c07769b17c0899b67f31ae519fefcd15bc2b9b11edcc5f0b69299e54fc295e",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "16C",
+            "offerId": "376d7cab629d5c78131aa250cdc4e714d089b06666041ba18db62490aafa9a6f",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 16,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "16D",
+            "offerId": "35e67540a9fbfe50d624d21b6cea043349e444be5672c988dcffb41935070c3e",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "16F",
+            "offerId": "423d0a30a466465e73f34979f902f9cb0caeee119fff2d233a929aca1adfc982",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 60.17,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 10.83,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 71,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "16H",
+            "offerId": "12cf214df55a1e4a267704c561c8d121ce7d658bba7969750dce3e12e911d291",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 16,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "16J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "16L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17A",
+            "offerId": "82e37885e7855e70b2bc0be27e676a2ee70b3a25ee86d16859dc0394283da28b",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17C",
+            "offerId": "14a5d06894c43b7850272ab8ec713a245d5f3c09868fe7b51ea1e13d846263f9",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 17,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17D",
+            "offerId": "f946a0f1cf5e84a3b72d7b592b172f0de13ffa5d724281cec74be4fd77002530",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 44.07,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.93,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 52,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17F",
+            "offerId": "dcfc21c57131a12ae92382eb86f8cc4a93cad1e6d84ff668fbf0a38a363519d0",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 38.99,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.01,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17H",
+            "offerId": "aeded8b1935fcf57f9b550debebc709775d947f0a2ec64ea09d5930a6b3b25c5",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 44.07,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.93,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 52,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 17,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17J",
+            "offerId": "9fb99b7fc8c2b9569885dfc777dd4192a3f44c5494cf0eac034d4315e5be272b",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "17L",
+            "offerId": "0ba7381441856688e7ade96a0019164e6af97d4b3c3c7f8b4acdd36d773e0f0b",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "18A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "18C",
+            "offerId": "5162ee7dcb35139d0d426aefcef5040798fa96100a0d5f704ad2f60e6be090fb",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 44.07,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.93,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 52,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 18,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "18D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "18F",
+            "offerId": "075bac28d4421df029f976c6a04b7813cc58d75451065ee341c4b97d1a67d4c9",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 38.99,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.01,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "18H",
+            "offerId": "fffe41208a4b68ddd0d8e1ebdd362cfdd95bf4ea9b7599312ecebd369511b431",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 44.07,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.93,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 52,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 18,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "18J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "18L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 19,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 19,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "19L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 20,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 20,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "20L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 21,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "21F",
+            "offerId": "4c8cdcc701ff3391378dcc379d379beb3512828f7d674e26f513158f3735db7b",
+            "slotCode": "SEAT",
+            "zoneCode": "FRONT_SEATS",
+            "price": {
+                "amount": 38.99,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.01,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Front Seats",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FRONT_SEATS_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 21,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "21L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "22A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "22C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 22,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "22D",
+            "offerId": "56af8074f8b56d297de9417cd870a9072f65f04bd119351939b3f11ea9bf494c",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 44.07,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.93,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 52,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "22F",
+            "offerId": "cc18af1b44fd8cf6332bca60c1628fa4dff175219bb003c4ab074ddc815b0ed1",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 38.99,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 7.01,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "22H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 22,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "22J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "22L",
+            "offerId": "46cd51d0acc7a3a2700501ec81d79273c421d2eb18253b324aaff9d714a323ff",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23A",
+            "offerId": "e24a395469c68fd3bd6b8bb9a4194f4ba87af63f2693406850713d96f3ef9fff",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 51.7,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 9.3,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 61,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23C",
+            "offerId": "db0863068f8a7d9962a9e0c2cf3d1760110f12b5d2093db1539e0bb6aad962d6",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 51.7,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 9.3,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 61,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 23,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23D",
+            "offerId": "4df50fb53acd460cbbf2859a08287b090a4275d88372bda112fb3b9ffde35749",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23F",
+            "offerId": "54b9fda0728c80126fabd612bebe51d23ea22ea5890ceacbdc275792d48c89a4",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 60.17,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 10.83,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 71,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": true,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23H",
+            "offerId": "9703cae021b3d2dc7485d0781b0417a72f148b3bfbcd5e12da0b0f8b9cf6e318",
+            "slotCode": "SEAT",
+            "zoneCode": "FIRST_ROW",
+            "price": {
+                "amount": 64.41,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 11.59,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 76,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Extra Space",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "FIRST_ROW_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 23,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23J",
+            "offerId": "b8922d8bc1484615d72519958392815399b478d08c3d01df4b54a9f05f9808b7",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 51.7,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 9.3,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 61,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "23L",
+            "offerId": "469cc8202bd0c49adc1ccd1f34cf7e57ca717880fd6199ebbd217251fcc5b17a",
+            "slotCode": "SEAT",
+            "zoneCode": "EXIT",
+            "price": {
+                "amount": 51.7,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 9.3,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 61,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Emergency Seats",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "EXIT_0",
+            "isRequirementShow": true
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 24,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "24F",
+            "offerId": "796f0a72c633298f963d3dd3e28fc4b228f72a9a5a1429b474875162495465d7",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 24,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "24L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 25,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 25,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "25L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 26,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "26F",
+            "offerId": "6356685757dbf33d7b89652d54b5261d0f765ca69997b75c1a644e8450d80342",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 26,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "26L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 27,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 27,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "27L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 28,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 28,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "28L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "29A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "29C",
+            "offerId": "264a18d5f9af5747411fd7c7413f3d4055f5830ad75c98e065812a6e1e274622",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 29,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "29D",
+            "offerId": "cbb6e05099b549012cb426edb2ec50cf7ed9f5919e711f3a3e159b57319bdd05",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "29F",
+            "offerId": "56e9e4f1947a8a3d1682664fef50fb9aea52b138c3b7391656f625a155fe1e5e",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "29H",
+            "offerId": "52fdaf5fc922252ad883f53a21554bf39dcf6122418975e2bf6ba11033b4688f",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 29,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "29J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "29L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 30,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 30,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "30J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "30L",
+            "offerId": "1c35245c584470a97d517be84f219eeff935a2f22c42d974338bdf7da39de9d4",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31A",
+            "offerId": "43607feaae957b27b7bc82681af5b4194f1d19143ac548ffd9b97a1f90eb29e0",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31C",
+            "offerId": "38f029d2a0b06335e27bba794763f878cfa77b2acfb87de605b197ddf33844bd",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 31,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31D",
+            "offerId": "31eac5c32d4de1da4a6cf68cebaebb999f0cbb7b29347b511abbfec63acfd465",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31F",
+            "offerId": "91a4ae4257d2fb92717ac2650d4858c977024aa622ee75c5de75ae035977da24",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31H",
+            "offerId": "4e9712e42060cdf79e0966930d357657de776e4360df62e0158d5965b4d4d40b",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 31,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "31J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "31L",
+            "offerId": "ded03f9b58d08e562be4f70bc9f7bf8055fb66fa19bf7e64932cfb1ddf153fe7",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "32A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "32C",
+            "offerId": "335b8d651b3c185e43dbbc0c5dbe96860141ec43d73ba8dfd4e8ae14dfe9c5ec",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 32,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "32D",
+            "offerId": "2d3615cf5c7066c4fbd1f83d3a9c89187d0cff8ff2265bcccc80546236e54baf",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "32F",
+            "offerId": "475d9050a9363c0982605b3095eb7c1c6d21ffe625acae6d4cc1121c01aa051c",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "32H",
+            "offerId": "7cbec183fee980b74a5282b88a2c211996e4792961be30e19d95d79e927b7bcb",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 32,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "32J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "32L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "33A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "33C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 33,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "33D",
+            "offerId": "61398bb5e75971cf65e3426dd36181a907861ae526a0748c1f8dae95e5aa6c54",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "33F",
+            "offerId": "b9f43f6a32b7b6965b6a43b6dbafd35eb184a92c9610220b5f18f4f92e09e278",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "33H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 33,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "33J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "33L",
+            "offerId": "79bf0b138bc5f933c84315719301d2e4725657795af8d4a84c4467a257f3b8ee",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34A",
+            "offerId": "ceb5a3f4fa67723755386447b0e8568aea64f369b12aea6132cba8bf75a72896",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "34C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 34,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34D",
+            "offerId": "58105f2249b02ad18104766d707d915be37387ad4272d6577c39c66866211fd8",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34F",
+            "offerId": "9ef53cccac4676e38bcbcec4f7bda16af82cc04b27c780aac6c678febb436b28",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34H",
+            "offerId": "78b3ce511428bd76f1863d97856a6fb2a621d3223e68d09ce4900557b5a08b25",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 34,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34J",
+            "offerId": "a148a20c5c84014673e03399b1f9609907a80834444daf9c7b3a1dcbcfc518d8",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "34L",
+            "offerId": "015b61e1638dbbdb305090dab33b729f4bf924873b28bbf283cd0adc5b31b69b",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35A",
+            "offerId": "83b32ad8288e5184c07734c7df2671a04a7cb49afaf7ce8f0a500eb9ecf868d8",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35C",
+            "offerId": "06aa0849ecded577d82371394386fefcd32ac68e37e2e10fa8240b823d4e43f5",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 35,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35D",
+            "offerId": "afdb8d1536ad961af6b7020f9537a6e8d07d249ac578885b1bb31d035f903283",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35F",
+            "offerId": "a002e9ebd1434e74c26c730b532cd475fd069d53249cbabb7463a5de30429359",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35H",
+            "offerId": "a1b51daf6b936a39346e8edb0dbb906a6df20cfa7cddd1cb16b33f9b77f9e20f",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 35,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35J",
+            "offerId": "98bfb49b0fd95d7336ad769978e3b600b3aea2a7f71bd2c47bd60ad5ef8da863",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "35L",
+            "offerId": "4c092623d274f5390cfc34bf0a70ca2950e5fdaa2d290b1ebe2a8003d1db8039",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 36,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 36,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "36L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37A",
+            "offerId": "81ed8213372f90d04801305a7bb3c773255c8b145f4c12416d20639989e9b86e",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37C",
+            "offerId": "abb196bca02f2b81a150295f3e942238b64def46d6ff26924c8644942e4ef3e5",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 37,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37D",
+            "offerId": "9cefaf11b28e754bf93444e91d1b0532234f61ad9c9e584104b405291ec22c9e",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37F",
+            "offerId": "bcd3ac50d4f3e21c02d658af9a3ffe0343ea8e68e5cfe0819f4c6bcfa7bcc710",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37H",
+            "offerId": "23d179bcbd9fe8f19a9ab57f4d321c4df09b1d299835e62d95a762dab301a2b4",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 37,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37J",
+            "offerId": "0203a5251c5cdf57ab1c0745ddeb9108a558392138c6c12f44cb225239cfe01d",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "37L",
+            "offerId": "594ec8373107e2b927ddf48d79c06aa19ffb67e61b32658fae30a18a7fdb8cd9",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "38A",
+            "offerId": "ddfe705feb3b62cfc4c89b9b100adaaad8ca12d3ec2652c1710aeb0e5e0b3ecf",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "38C",
+            "offerId": "70ff5df3a48315d5ce309ca5af31b62ff92aed6aaa0db1c81a8347ead76b11ce",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 38,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "38D",
+            "offerId": "fe5a06c7693377fbe83d7c525839930fed6f6ddd79322952a8c311db96bf4896",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "38F",
+            "offerId": "4238bd5c2cf1a9aaab791c231075a4e1428035a3d4c41e60d1de26214d78887c",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "38H",
+            "offerId": "88947a8dc9715338051d729c53e6917a593f9b4c591666cf9f2ec033f7591055",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 38,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "38J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "38L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "39A",
+            "offerId": "5fcf67692c262442e56691b06030c8c6062c37a656ca9a81ff40334e039a79ea",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "39C",
+            "offerId": "e050113585e0f4d52ef0e332354a29361045486347de303055ac0d1d2d0aa8c7",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 39,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "39D",
+            "offerId": "e84bce9ec53be89215edef92069837243cacce8c89595da6dd24b7af70e45a48",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "39F",
+            "offerId": "14b60e81be0ddefa160c5c5887ef9320bd708053a1db8d7fc480bc18f665a799",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "39H",
+            "offerId": "b7ad5e26952cf32bdfdd232bbab4614f71e1026e535fbff17a292ee83f6a48dc",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 39,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "39J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "39L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40A",
+            "offerId": "649cab06008e15e942786d9f9b90a04b5e06fd19155616f45a7d150544e665d9",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40C",
+            "offerId": "6d72d56f6c3d318c44cf9e776c1c74f5d1e197102b7aa3a17e004648ae062f37",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 40,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40D",
+            "offerId": "4e64d0040d5ed89aa80689340113a23e9fd2f94faeb5dc0506b58ee8a111fc20",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40F",
+            "offerId": "f60b2bd1919e45540b44edf5401d4eddcac90f4ac0f2cf6b93eee7de08515f90",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40H",
+            "offerId": "2e6bfe4007dd9a997dc443c828af918231d4fe71832ef9f871571ab284195d91",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 40,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "40J",
+            "offerId": "1cb7e5e7a530c13c4e736eaf9da4a3bd2e62a023bd0a84dacbfa39242a2a160b",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "40L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41A",
+            "offerId": "5995eedbf2f6432116d9cfedebe080f4c6d94c58e4d1f4cbc1f7d9dfcdd4daf3",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41C",
+            "offerId": "fa077b7c457dc5dd41b4fb25274721ae16186665f1b2604acd2fdd079d4d6d55",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 41,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41D",
+            "offerId": "dafcf9e0b134b9213dff79ea3dd441335aa6f9f944fd1a6160c2fe1ed5ca454a",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41F",
+            "offerId": "690a31bdba8fd9ed208f116b4195c75f9ca546d675927cad871e80d41756c3cc",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41H",
+            "offerId": "c77eee7e0d554dd69f1af335eb41a96db571ce7da0f0f224af1809b09466223a",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 41,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41J",
+            "offerId": "1dc58e4c7822f888abbffc3ad4b1f58840823e0f86ce135934b899be3e07c8db",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "41L",
+            "offerId": "3eab3566d3854b30a1a9bdc7ccaf9c22bb2822fa21752f030777f4ed681ff18f",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42A",
+            "offerId": "72fd598e07fa46493c07773797a8793e3e3c64686c0bc79b42ac2b1529ba2579",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42C",
+            "offerId": "a114e6fd46667904e638fc832171f86f87456b8bfb184042feeaf9cbda1953df",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 42,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42D",
+            "offerId": "0866169799708be944abab97bed0e518b9d76d41636afff188af48db2719e561",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42F",
+            "offerId": "04d0c0a89fc1bbcb53e43ebd98c5ecb815defa10404a5a98ffe75ab498f63c77",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42H",
+            "offerId": "709dabe75dc44caef34d3cfb57e2ace1e04b2f0191ff2f857d53aa1e7fa8d37f",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 42,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "42J",
+            "offerId": "413f9c3da169e2a485323daef01a45bd73d1d57d4a18430bd501ae2470e0a60f",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "42L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 43,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43D",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43F",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43H",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 43,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "43L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "WINDOWS",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "44A",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "44C",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 44,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "44D",
+            "offerId": "4a9f92f351034102bd196eb3748dd0edf367818d5133aa8e55b20b5f7462a0f9",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "44F",
+            "offerId": "e3c008b09666dc63dfd3fbccc4ada8e1fa05af761c88916bbc5788135661e675",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 16.95,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.05,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "MIDDLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": true,
+            "seatNumber": "44H",
+            "offerId": "d07f9eea49b5493f8380582d9612282c59a73d2ad13e0812f93316173937b2bb",
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": {
+                "amount": 20.34,
+                "currency": "USD"
+            },
+            "tax": {
+                "amount": 3.66,
+                "currency": "USD"
+            },
+            "totalPrice": {
+                "amount": 24,
+                "currency": "USD"
+            },
+            "analyticsZoneLabel": "Standard",
+            "positionCode": "AISLE",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": 44,
+            "available": false,
+            "seatNumber": null,
+            "offerId": null,
+            "slotCode": "AISLE",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "uniqueZoneCode": "undefined_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "44J",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        },
+        {
+            "isMoreSpace": false,
+            "rowNumber": null,
+            "available": false,
+            "seatNumber": "44L",
+            "offerId": null,
+            "slotCode": "SEAT",
+            "zoneCode": "STANDARD",
+            "price": null,
+            "tax": null,
+            "totalPrice": null,
+            "analyticsZoneLabel": "Standard",
+            "uniqueZoneCode": "STANDARD_0",
+            "isRequirementShow": false
+        }
+    ],
+    "zones": [
+        {
+            "zoneCode": "FIRST_ROW",
+            "minPrice": {
+                "amount": 71,
+                "currency": "USD"
+            },
+            "availableZone": true
+        },
+        {
+            "zoneCode": "FRONT_SEATS",
+            "minPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "availableZone": true
+        },
+        {
+            "zoneCode": "EXIT",
+            "minPrice": {
+                "amount": 46,
+                "currency": "USD"
+            },
+            "availableZone": true
+        },
+        {
+            "zoneCode": "STANDARD",
+            "minPrice": {
+                "amount": 20,
+                "currency": "USD"
+            },
+            "availableZone": true
+        }
+    ],
+    "fullSegment": false,
+    "timestamp": 1721898911
+}

@@ -1,0 +1,229 @@
+{
+  "numberOfElements": 50,
+  "content": [
+    {
+      "summary": {
+          "tags": ["Recomendado","Más económico"],
+          "stopOvers": 1,
+          "duration": 815,
+          "flightCode": "LA1437",
+          "origin": {
+              "departure": "2024-08-09T23:50:00",
+              "departureTime": "23:50",
+              "iataCode": "LIM",
+              "airport": "J Chavez Intl.",
+              "city": "Lima"
+          },
+          "destination": {
+              "arrival": "2024-08-10T14:25:00",
+              "arrivalTime": "14:25",
+              "iataCode": "SCL",
+              "airport": "Aeropuerto Internacional Comodoro Arturo Merino Benítez",
+              "city": "Santiago de Chile"
+          },
+          "brands": [
+              {
+                  "id": "KD",
+                  "offerId": "7168e69a79d25d78fb36bf430dec23a0997519e105fbfb030b495ed01e9b29bf",
+                  "brandText": "FULL",
+                  "brandDescription": "xp_sales_web_brand_economy_full_description",
+                  "promotionalText": {
+                      "show": false,
+                      "label": ""
+                  },
+                  "cabin": {
+                      "id": "Y",
+                      "label": "Economy"
+                  },
+                  "rules": {},
+                  "farebasis": "BLEKDZ0F",
+                  "price": {
+                      "currency": "USD",
+                      "amount": 1420.03,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 1,420.03",
+                      "display": "USD 1,420.03"
+                  },
+                  "lowestPriceDifference": {
+                      "currency": "USD",
+                      "amount": 0,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 0.00",
+                      "display": "USD 0.00"
+                  },
+                  "lowestPriceBrand": "KD",
+                  "priceAfterSelection": {
+                      "currency": "USD",
+                      "amount": 1420.03,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 1,420.03",
+                      "display": "USD 1,420.03"
+                  },
+                  "attributes": {
+                      "comfortableSeat": {
+                          "show": false
+                      },
+                      "latamPlusSeat": {
+                          "show": false,
+                          "exclusive": false
+                      },
+                      "food": {
+                          "show": false,
+                          "exclusive": false
+                      },
+                      "accrual": {
+                          "show": false
+                      },
+                      "personalItem": {
+                          "show": true
+                      },
+                      "seatSelection": {
+                          "show": true
+                      },
+                      "flexibility": {
+                          "show": true
+                      },
+                      "changes": {
+                          "show": false
+                      },
+                      "warnFfpBenefits": null,
+                      "upgCoupons": null
+                  }
+              },
+              {
+                "id": "QP",
+                "offerId": "d20d1b61749177becd02fbc0894c47763877ca87043aeec357ec95eb236196d0",
+                "brandText": "BASIC",
+                "brandDescription": "xp_sales_web_brand_economy_basic_description",
+                "promotionalText": {
+                    "show": false,
+                    "label": ""
+                },
+                "cabin": {
+                    "id": "Y",
+                    "label": "Economy"
+                },
+                "rules": {},
+                "farebasis": "GLEQPZ0F",
+                "price": {
+                    "currency": "USD",
+                    "amount": 141.01,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 141.01",
+                    "display": "USD 141.01"
+                },
+                "lowestPriceDifference": {
+                    "currency": "USD",
+                    "amount": 0,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 0.00",
+                    "display": "USD 0.00"
+                },
+                "lowestPriceBrand": "QP",
+                "priceAfterSelection": {
+                    "currency": "USD",
+                    "amount": 141.01,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 141.01",
+                    "display": "USD 141.01"
+                },
+                "attributes": {
+                    "comfortableSeat": {
+                        "show": false
+                    },
+                    "latamPlusSeat": {
+                        "show": false,
+                        "exclusive": false
+                    },
+                    "food": {
+                        "show": false,
+                        "exclusive": false
+                    },
+                    "accrual": {
+                        "show": false
+                    },
+                    "personalItem": {
+                        "show": true
+                    },
+                    "seatSelection": {
+                        "show": false
+                    },
+                    "flexibility": {
+                        "show": false
+                    },
+                    "changes": {
+                        "show": false
+                    },
+                    "warnFfpBenefits": null,
+                    "upgCoupons": null
+                }
+            }
+          ],
+          "lowestPrice": {
+              "currency": "USD",
+              "amount": 1420.03,
+              "displayCurrency": "USD",
+              "displayAmount": " 1,420.03",
+              "display": "USD 1,420.03"
+          },
+          "flightOperators": [
+              "LATAM Airlines Ecuador",
+              "LATAM Airlines Group"
+          ],
+          "changeOfAirport": true
+      },
+      "itinerary": [
+          {
+              "subjectToGovernmentApproval": true,
+              "duration": 265,
+              "cabinClass": null,
+              "equipment": "320",
+              "aircraftLeaseText": "LATAM AIRLINES ECUADOR",
+              "flight": {
+                  "flightNumber": 1437,
+                  "airlineCode": "LA",
+                  "operatingAirlineCode": "LA",
+                  "flightOperator": "XL",
+                  "stopAirports": [],
+                  "departureTerminal": null,
+                  "arrivalTerminal": "IA"
+              },
+              "origin": "LIM",
+              "destination": "EZE",
+              "departure": "2024-08-09T23:50:00",
+              "arrival": "2024-08-10T06:15:00",
+              "bookingClass": null,
+              "fareBasis": null,
+              "type": null
+          },
+          {
+              "codeShare": false,
+              "interLine": false,
+              "subjectToGovernmentApproval": true,
+              "duration": 150,
+              "flightsMiles": null,
+              "cabinClass": null,
+              "equipment": "320",
+              "aircraftLeaseText": "LATAM AIRLINES GROUP",
+              "flight": {
+                  "flightNumber": 426,
+                  "airlineCode": "LA",
+                  "operatingAirlineCode": "LA",
+                  "flightOperator": "LA",
+                  "stopAirports": [],
+                  "departureTerminal": null,
+                  "arrivalTerminal": "2"
+              },
+              "origin": "AEP",
+              "destination": "SCL",
+              "departure": "2024-08-10T12:55:00",
+              "arrival": "2024-08-10T14:25:00",
+              "bookingClass": null,
+              "fareBasis": null,
+              "type": null
+          }
+      ]
+  }
+]
+
+}

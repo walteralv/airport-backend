@@ -1,0 +1,132 @@
+[
+  {
+      "label": "FLIGHTS",
+      "total": {
+          "amount": 1510.55,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "screenReaderText": "1510.55 Dólares americanos"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "SEATS",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "BAGGAGE",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "OVERWEIGHT",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "ADDITIONAL_SERVICES",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "HOTEL",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": false
+  },
+  {
+      "label": "CAR",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": false
+  },
+  {
+      "label": "INSURANCE",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "EXTRA_BENEFITS",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "TOTAL",
+      "total": {
+          "amount": 1510.55,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "screenReaderText": "1510.55 Dólares americanos"
+      },
+      "hasItems": true,
+      "isPayable": true
+  }
+]

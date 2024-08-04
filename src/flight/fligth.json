@@ -1,0 +1,344 @@
+{
+  "summary": {
+      "tags": ["Recomendado","Más económico"],
+      "stopOvers": 1,
+      "duration": 815,
+      "flightCode": "LA1437",
+      "origin": {
+          "departure": "2024-08-09T23:50:00",
+          "departureTime": "23:50",
+          "iataCode": "LIM",
+          "airport": "J Chavez Intl.",
+          "city": "Lima"
+      },
+      "destination": {
+          "arrival": "2024-08-10T14:25:00",
+          "arrivalTime": "14:25",
+          "iataCode": "SCL",
+          "airport": "Aeropuerto Internacional Comodoro Arturo Merino Benítez",
+          "city": "Santiago de Chile"
+      },
+      "flight-fares": [
+          {
+              "fareId": 1,
+              "fareText": "FULL",
+              "fareDescription": "",
+              "fare": { 
+                  "fare_id": 3,
+                  "fare_type": "First",
+                  "description": "First Class",
+                  "cabin_id": "FC",
+                  "cabin_label": "First Class"
+              },
+              "price": {
+                  "price": 200,
+                  "currency": "USD",
+                  "displayCurrency": "USD",
+                  "display_currency": "USD",
+                  "display_amount": "200.00",
+                  "display": "USD 200.00"
+              },
+              "lowestPriceDifference": {
+                  "lowest_price_difference": "0",
+                  "display": "USD 0.00"
+                },
+              "lowestPriceBrand": "Basic",
+              "attributes": {
+                "food": {
+                    "show": false,
+                    "exclusive": false
+                  },
+                  "alcohol": {
+                    "show": false
+                  },
+                  "changes": {
+                    "show": false
+                  },
+                  "flexibility": {
+                    "show": false
+                  },
+                  "personalItem": {
+                    "show": true
+                  },
+                  "seatSelection": {
+                    "show": false
+                  },
+                  "comfortableSeat": {
+                    "show": false
+                  }
+              }
+          },
+          {
+            "fareId": "QP",
+            "fareText": "BASIC",
+            "fareDescription": "xp_sales_web_brand_economy_basic_description",
+            "cabin": {
+                "id": "Y",
+                "label": "Economy"
+            },
+            "price": {
+                "currency": "USD",
+                "amount": 141.01,
+                "displayCurrency": "USD",
+                "displayAmount": " 141.01",
+                "display": "USD 141.01"
+            },
+            "lowestPriceDifference": {
+                "currency": "USD",
+                "amount": 0,
+                "displayCurrency": "USD",
+                "displayAmount": " 0.00",
+                "display": "USD 0.00"
+            },
+            "attributes": {
+                "comfortableSeat": {
+                    "show": false
+                },
+                "latamPlusSeat": {
+                    "show": false,
+                    "exclusive": false
+                },
+                "food": {
+                    "show": false,
+                    "exclusive": false
+                },
+                "accrual": {
+                    "show": false
+                },
+                "personalItem": {
+                    "show": true
+                },
+                "seatSelection": {
+                    "show": false
+                },
+                "flexibility": {
+                    "show": false
+                },
+                "changes": {
+                    "show": false
+                },
+                "warnFfpBenefits": null,
+                "upgCoupons": null
+            }
+        }
+      ],
+      "lowestPrice": {
+          "currency": "USD",
+          "amount": 1420.03,
+          "displayCurrency": "USD",
+          "displayAmount": " 1,420.03",
+          "display": "USD 1,420.03"
+      },
+      "changeOfAirport": true
+  },
+  "itinerary": [
+      {
+          "duration": 265,
+          "equipment": "320",
+          "aircraftLeaseText": "LATAM AIRLINES ECUADOR",
+          "flightNumber": 1437,
+          "origin": "LIM",
+          "destination": "EZE",
+          "departure": "2024-08-09T23:50:00",
+          "arrival": "2024-08-10T06:15:00"
+      },
+      {
+          "duration": 150,
+          "equipment": "320",
+          "aircraftLeaseText": "LATAM AIRLINES GROUP",
+          "flightNumber": 426,
+          "origin": "AEP",
+          "destination": "SCL",
+          "departure": "2024-08-10T12:55:00",
+          "arrival": "2024-08-10T14:25:00"
+      }
+  ]
+}
+
+{
+    "flightId": 1,
+    "flightNumber": "AA101",
+    "airline": "American Airlines",
+    "departure_time": "2024-08-01T08:00:00.000Z",
+    "arrival_time": "2024-08-01T12:00:00.000Z",
+    "duration": 240,
+    "status": "scheduled",
+    "equipment": "Boeing 737",
+    "aircraftLeaseText": "Leased from XYZ",
+    "origin": {
+      "departure": "2024-08-01T08:00:00.000Z",
+      "departureTime": "08:00",
+      "iataCode": "LIM",
+      "airport": "Jorge Chavez International Airport",
+      "city": "Lima"
+    },
+    "destination": {
+      "arrival": "2024-08-01T12:00:00.000Z",
+      "arrivalTime": "12:00",
+      "iataCode": "SCL",
+      "airport": "Comodoro Arturo Merino Benítez International Airport",
+      "city": "Santiago"
+    },
+    "itinerary": [
+      {
+        "origin": "Lima",
+        "destination": "Santiago",
+        "duration": 240,
+        "equipment": "Boeing 737",
+        "aircraftLeaseText": "Leased from XYZ",
+        "flightNumber": "AA101",
+        "departure": "2024-08-01T08:00:00.000Z",
+        "arrival": "2024-08-01T12:00:00.000Z"
+      }
+    ],
+    "flightFares": [
+      {
+        "fareId": 1,
+        "fareText": "Economy",
+        "fareDescription": "Economy Class",
+        "fare": {
+          "fare_id": 1,
+          "fare_type": "Economy",
+          "description": "Economy Class",
+          "cabin_id": "EC",
+          "cabin_label": "Economy Class"
+        },
+        "price": {
+          "price": "200",
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "display_currency": "USD",
+          "display_amount": "200.00",
+          "display": "USD 200.00"
+        },
+        "lowestPriceDifference": {
+          "lowest_price_difference": "0",
+          "display": "USD 0.00"
+        },
+        "lowestPriceBrand": "Basic",
+        "attributes": {
+          "food": {
+            "show": false,
+            "exclusive": false
+          },
+          "alcohol": {
+            "show": false
+          },
+          "changes": {
+            "show": false
+          },
+          "flexibility": {
+            "show": false
+          },
+          "personalItem": {
+            "show": true
+          },
+          "seatSelection": {
+            "show": false
+          },
+          "comfortableSeat": {
+            "show": false
+          }
+        }
+      },
+      {
+        "fareId": 2,
+        "fareText": "Business",
+        "fareDescription": "Business Class",
+        "fare": {
+          "fare_id": 2,
+          "fare_type": "Business",
+          "description": "Business Class",
+          "cabin_id": "BC",
+          "cabin_label": "Business Class"
+        },
+        "price": {
+          "price": "500",
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "display_currency": "USD",
+          "display_amount": "500.00",
+          "display": "USD 500.00"
+        },
+        "lowestPriceDifference": {
+          "lowest_price_difference": "0",
+          "display": "USD 0.00"
+        },
+        "lowestPriceBrand": "Premium",
+        "attributes": {
+          "food": {
+            "show": true,
+            "exclusive": true
+          },
+          "alcohol": {
+            "show": true
+          },
+          "changes": {
+            "show": true
+          },
+          "flexibility": {
+            "show": true
+          },
+          "personalItem": {
+            "show": true
+          },
+          "seatSelection": {
+            "show": true
+          },
+          "comfortableSeat": {
+            "show": true
+          }
+        }
+      },
+      {
+        "fareId": 3,
+        "fareText": "First",
+        "fareDescription": "First Class",
+        "fare": {
+          "fare_id": 3,
+          "fare_type": "First",
+          "description": "First Class",
+          "cabin_id": "FC",
+          "cabin_label": "First Class"
+        },
+        "price": {
+          "price": "1000",
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "display_currency": "USD",
+          "display_amount": "1000.00",
+          "display": "USD 1000.00"
+        },
+        "lowestPriceDifference": {
+          "lowest_price_difference": "0",
+          "display": "USD 0.00"
+        },
+        "lowestPriceBrand": "Luxury",
+        "attributes": {
+          "food": {
+            "show": true,
+            "exclusive": true
+          },
+          "alcohol": {
+            "show": true
+          },
+          "changes": {
+            "show": true
+          },
+          "flexibility": {
+            "show": true
+          },
+          "personalItem": {
+            "show": true
+          },
+          "seatSelection": {
+            "show": true
+          },
+          "comfortableSeat": {
+            "show": true
+          }
+        }
+      }
+    ]
+    
+  }

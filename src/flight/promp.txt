@@ -1,0 +1,1052 @@
+hola eres un experto en getion de vuelos e ingeniero de software.
+quiero desrrollar un sistema de reserva de vuelos similar a LATAM, aireurapa, etc.
+
+el usuario(Passengers) pueda reservar un vuelo para una o más personas, con los siguientes casos de uso:
+
+## Buscar vuelos:
+- buscar vuelos disponibles con los siguientes datos: aereopuerto de origen, aereopuerto de destino, fecha de ida, fecha de vuelta opcional, numero de pasajeros(por defecto es 1)
+apareceran los vuelos disponibles(tando de ida y vuelta), tenemos que elegir un vuelo de ida y uno de vuelta, cada uno de estos vuelos tienen distintos precios, hora de ida, hora de llegada, duración.
+
+- los vuelos pueden tener escalas.
+
+quiero que el backend me retorne algo como esto al momento de buscar vuelos disponibles:
+'''
+{
+  "numberOfElements": 50,
+  "content": [
+    {
+      "summary": {
+          "tags": ["Recomendado","Más económico"],
+          "stopOvers": 1,
+          "duration": 815,
+          "flightCode": "LA1437",
+          "origin": {
+              "departure": "2024-08-09T23:50:00",
+              "departureTime": "23:50",
+              "iataCode": "LIM",
+              "airport": "J Chavez Intl.",
+              "city": "Lima"
+          },
+          "destination": {
+              "arrival": "2024-08-10T14:25:00",
+              "arrivalTime": "14:25",
+              "iataCode": "SCL",
+              "airport": "Aeropuerto Internacional Comodoro Arturo Merino Benítez",
+              "city": "Santiago de Chile"
+          },
+          "brands": [
+              {
+                  "id": "KD",
+                  "offerId": "7168e69a79d25d78fb36bf430dec23a0997519e105fbfb030b495ed01e9b29bf",
+                  "brandText": "FULL",
+                  "brandDescription": "xp_sales_web_brand_economy_full_description",
+                  "promotionalText": {
+                      "show": false,
+                      "label": ""
+                  },
+                  "cabin": {
+                      "id": "Y",
+                      "label": "Economy"
+                  },
+                  "rules": {},
+                  "farebasis": "BLEKDZ0F",
+                  "price": {
+                      "currency": "USD",
+                      "amount": 1420.03,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 1,420.03",
+                      "display": "USD 1,420.03"
+                  },
+                  "lowestPriceDifference": {
+                      "currency": "USD",
+                      "amount": 0,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 0.00",
+                      "display": "USD 0.00"
+                  },
+                  "lowestPriceBrand": "KD",
+                  "priceAfterSelection": {
+                      "currency": "USD",
+                      "amount": 1420.03,
+                      "displayCurrency": "USD",
+                      "displayAmount": " 1,420.03",
+                      "display": "USD 1,420.03"
+                  },
+                  "attributes": {
+                      "comfortableSeat": {
+                          "show": false
+                      },
+                      "latamPlusSeat": {
+                          "show": false,
+                          "exclusive": false
+                      },
+                      "food": {
+                          "show": false,
+                          "exclusive": false
+                      },
+                      "accrual": {
+                          "show": false
+                      },
+                      "personalItem": {
+                          "show": true
+                      },
+                      "seatSelection": {
+                          "show": true
+                      },
+                      "flexibility": {
+                          "show": true
+                      },
+                      "changes": {
+                          "show": false
+                      },
+                      "warnFfpBenefits": null,
+                      "upgCoupons": null
+                  }
+              },
+              {
+                "id": "QP",
+                "offerId": "d20d1b61749177becd02fbc0894c47763877ca87043aeec357ec95eb236196d0",
+                "brandText": "BASIC",
+                "brandDescription": "xp_sales_web_brand_economy_basic_description",
+                "promotionalText": {
+                    "show": false,
+                    "label": ""
+                },
+                "cabin": {
+                    "id": "Y",
+                    "label": "Economy"
+                },
+                "rules": {},
+                "farebasis": "GLEQPZ0F",
+                "price": {
+                    "currency": "USD",
+                    "amount": 141.01,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 141.01",
+                    "display": "USD 141.01"
+                },
+                "lowestPriceDifference": {
+                    "currency": "USD",
+                    "amount": 0,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 0.00",
+                    "display": "USD 0.00"
+                },
+                "lowestPriceBrand": "QP",
+                "priceAfterSelection": {
+                    "currency": "USD",
+                    "amount": 141.01,
+                    "displayCurrency": "USD",
+                    "displayAmount": " 141.01",
+                    "display": "USD 141.01"
+                },
+                "attributes": {
+                    "comfortableSeat": {
+                        "show": false
+                    },
+                    "latamPlusSeat": {
+                        "show": false,
+                        "exclusive": false
+                    },
+                    "food": {
+                        "show": false,
+                        "exclusive": false
+                    },
+                    "accrual": {
+                        "show": false
+                    },
+                    "personalItem": {
+                        "show": true
+                    },
+                    "seatSelection": {
+                        "show": false
+                    },
+                    "flexibility": {
+                        "show": false
+                    },
+                    "changes": {
+                        "show": false
+                    },
+                    "warnFfpBenefits": null,
+                    "upgCoupons": null
+                }
+            }
+          ],
+          "lowestPrice": {
+              "currency": "USD",
+              "amount": 1420.03,
+              "displayCurrency": "USD",
+              "displayAmount": " 1,420.03",
+              "display": "USD 1,420.03"
+          },
+          "flightOperators": [
+              "LATAM Airlines Ecuador",
+              "LATAM Airlines Group"
+          ],
+          "changeOfAirport": true
+      },
+      "itinerary": [
+          {
+              "subjectToGovernmentApproval": true,
+              "duration": 265,
+              "cabinClass": null,
+              "equipment": "320",
+              "aircraftLeaseText": "LATAM AIRLINES ECUADOR",
+              "flight": {
+                  "flightNumber": 1437,
+                  "airlineCode": "LA",
+                  "operatingAirlineCode": "LA",
+                  "flightOperator": "XL",
+                  "stopAirports": [],
+                  "departureTerminal": null,
+                  "arrivalTerminal": "IA"
+              },
+              "origin": "LIM",
+              "destination": "EZE",
+              "departure": "2024-08-09T23:50:00",
+              "arrival": "2024-08-10T06:15:00",
+              "bookingClass": null,
+              "fareBasis": null,
+              "type": null
+          },
+          {
+              "codeShare": false,
+              "interLine": false,
+              "subjectToGovernmentApproval": true,
+              "duration": 150,
+              "flightsMiles": null,
+              "cabinClass": null,
+              "equipment": "320",
+              "aircraftLeaseText": "LATAM AIRLINES GROUP",
+              "flight": {
+                  "flightNumber": 426,
+                  "airlineCode": "LA",
+                  "operatingAirlineCode": "LA",
+                  "flightOperator": "LA",
+                  "stopAirports": [],
+                  "departureTerminal": null,
+                  "arrivalTerminal": "2"
+              },
+              "origin": "AEP",
+              "destination": "SCL",
+              "departure": "2024-08-10T12:55:00",
+              "arrival": "2024-08-10T14:25:00",
+              "bookingClass": null,
+              "fareBasis": null,
+              "type": null
+          }
+      ]
+  }
+]
+
+}
+'''
+
+- luego tenemos que escojer los asientos de cada pasajero(estos pueden der de varios tipos como estandar, premium, etc y pueden tener distintos precios, tambien tienen que tener un estatus para saber si estan disponibles), se tienen que escoger assientos para los vuelos de ida y vuelta, si uno de esos vuelos tiene paradas y cambian de avion, tambien se tienen que poder escoger los asientos de esas paradas.
+aqui tienes un ejemplo del json que tiene que devolver el backend.
+
+'''
+{
+  "status": "booked",
+  "legs": [
+      {
+          "reasonDisableSeatMap": null,
+          "destination": {
+              "name": "Santiago de Chile",
+              "country": "Chile",
+              "airportName": "Aeropuerto Internacional Comodoro Arturo Merino Benítez",
+              "iataCode": "SCL",
+              "isoCountryCode": "CL",
+              "isoCityCode": "SCL"
+          },
+          "origin": {
+              "name": "Lima",
+              "country": "Perú",
+              "airportName": "J Chavez Intl.",
+              "iataCode": "LIM",
+              "isoCountryCode": "PE",
+              "isoCityCode": "LIM"
+          },
+          "itinerary": {
+              "departure": "2024-08-09T09:35:00",
+              "arrival": "2024-08-09T14:05:00",
+              "travelTime": {
+                  "hours": 4,
+                  "minutes": 30
+              },
+              "itineraryIndex": 0,
+              "flightIndex": 0,
+              "indexOfItinerary": 0,
+              "tripDirection": "outbound",
+              "totalFlightOfItinerary": 1,
+              "flightCode": "LA2697"
+          },
+          "equipment": "789",
+          "flightCode": "LA2697",
+          "cabinName": "premium business",
+          "brandLabel": "Premium Business",
+          "countInfant": 0,
+          "countChild": 0,
+          "countAdult": 1,
+          "cabins": [
+              {
+                  "name": "Business",
+                  "visibleHeaderColumns": true,
+                  "seatColumns": [
+                      "LEFT_SIDE",
+                      "A",
+                      "C",
+                      "AISLE",
+                      "D",
+                      "H",
+                      "AISLE",
+                      "J",
+                      "L",
+                      "RIGHT_SIDE"
+                  ],
+                  "seatRows": [
+                      {
+                          "zoneCode": "PREMIUM_BUSINESS",
+                          "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                          "latamPlus": false,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "1A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "analyticsZoneLabel": "Premium Business",
+                                  "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "1C",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "analyticsZoneLabel": "Premium Business",
+                                  "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "1D",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "analyticsZoneLabel": "Premium Business",
+                                  "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": 1,
+                                  "seatNumber": null,
+                                  "slotCode": "AISLE",
+                                  "uniqueZoneCode": "undefined_0",
+                                  "isRequirementShow": false
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "Economy",
+                  "visibleHeaderColumns": true,
+                  "seatColumns": [
+                      "LEFT_SIDE",
+                      "A",
+                      "B",
+                      "C",
+                      "AISLE",
+                      "D",
+                      "F",
+                      "H",
+                      "AISLE",
+                      "J",
+                      "K",
+                      "L",
+                      "RIGHT_SIDE"
+                  ],
+                  "seatRows": [
+                      {
+                          "zoneCode": "FIRST_ROW",
+                          "uniqueZoneCode": "FIRST_ROW_0",
+                          "latamPlus": true,
+                          "isMoreSpace": true,
+                          "seats": [
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12C",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      },
+                      {
+                          "zoneCode": "STANDARD",
+                          "uniqueZoneCode": "STANDARD_0",
+                          "latamPlus": false,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "18A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "18B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": false,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      },
+                      {
+                          "zoneCode": "EXIT",
+                          "uniqueZoneCode": "EXIT_0",
+                          "latamPlus": true,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "30A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "30B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "EXIT",
+                                  "analyticsZoneLabel": "Emergency Seats",
+                                  "positionCode": "MIDDLE",
+                                  "uniqueZoneCode": "EXIT_0",
+                                  "isRequirementShow": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "zones": [
+              {
+                  "zoneCode": "PREMIUM_BUSINESS"
+              },
+              {
+                  "zoneCode": "FIRST_ROW"
+              },
+              {
+                  "zoneCode": "EXIT"
+              },
+              {
+                  "zoneCode": "STANDARD"
+              }
+          ],
+          "flightOperatorName": "LATAM Airlines",
+          "uniqId": "LIM-SCL"
+      }
+  ],
+  "zones": [
+      {
+          "zoneCode": "FIRST_ROW",
+          "minPrice": {
+              "amount": 71,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "FRONT_SEATS",
+          "minPrice": {
+              "amount": 46,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "EXIT",
+          "minPrice": {
+              "amount": 46,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "STANDARD",
+          "minPrice": {
+              "amount": 20,
+              "currency": "USD"
+          },
+          "availableZone": true
+      }
+  ],
+  "fullSegment": false,
+  "timestamp": 1721833490
+}
+'''
+
+- luego se tienen que poner los datos de cada uno de los pasageros
+- finalmente pagar
+- se tiene que mostrar un resumen de precios:
+aquí tienes ejemplo del json que tiene que devolver el backend para el resumen de precios:
+'''
+[
+  {
+      "label": "FLIGHTS",
+      "total": {
+          "amount": 1510.55,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "screenReaderText": "1510.55 Dólares americanos"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "SEATS",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "BAGGAGE",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": true,
+      "isPayable": true
+  },
+  {
+      "label": "ADDITIONAL_SERVICES",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "INSURANCE",
+      "total": {
+          "amount": 0,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 0.00",
+          "display": "USD 0.00",
+          "screenReaderText": "0 Dólar americano"
+      },
+      "hasItems": false,
+      "isPayable": true
+  },
+  {
+      "label": "TOTAL",
+      "total": {
+          "amount": 1510.55,
+          "currency": "USD",
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "screenReaderText": "1510.55 Dólares americanos"
+      },
+      "hasItems": true,
+      "isPayable": true
+  }
+]
+'''
+
+- se tiene que mostrar un resumen de la reserva, aquí tienes ejemplo del json que tiene que devolver el backend:
+
+'''
+{
+  "order": {
+      "flightOfferList": [
+          {
+              "status": "IN_CART",
+              "paymentId": null,
+              "transactionId": null,
+              "offerId": "e6c28ff83f8ca65e7bdb0f57ed9fd5ffd56acae38998ca3d61bee4584a7e9b67",
+              "flow": "REGULAR",
+              "type": "FLIGHT",
+              "data": {
+                  "offerType": "FLIGHT",
+                  "brandId": "EJ",
+                  "brandLabel": "PREMIUM BUSINESS",
+                  "cabinClass": "Business",
+                  "itineraryPart": [
+                      {
+                          "segments": [
+                              {
+                                  "aircraftLeaseText": "LATAM AIRLINES PERU",
+                                  "arrival": "2024-08-09T14:05:00",
+                                  "bookingClass": "D",
+                                  "cabinClass": "Business",
+                                  "departure": "2024-08-09T09:35:00",
+                                  "destination": "SCL",
+                                  "duration": 210,
+                                  "equipment": "789",
+                                  "fareBasis": "DLEEJZ8F",
+                                  "flight": {
+                                      "airlineCode": "LA",
+                                      "arrivalTerminal": "2",
+                                      "flightNumber": 2697,
+                                      "operatingAirlineCode": "LA"
+                                  },
+                                  "flightsMiles": 1524,
+                                  "origin": "LIM",
+                                  "type": null
+                              }
+                          ],
+                          "stops": 0,
+                          "totalDuration": 210
+                      }
+                  ],
+                  "allowances": [
+                      {
+                          "carryOnBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 35 pounds, or 16 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 16
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 35
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "1",
+                                  "totalWeight": "16 kg / 35 lb"
+                              }
+                          },
+                          "checkedInBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 50 pounds, or 23 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 23
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 50
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "2",
+                                  "totalWeight": "23 kg / 50 lb"
+                              }
+                          },
+                          "passengerType": "ADT"
+                      }
+                  ]
+              },
+              "breakdown": {
+                  "discounts": null,
+                  "surcharges": null,
+                  "fare": [
+                      {
+                          "amount": 1220,
+                          "currency": "USD",
+                          "passengerType": "ADT",
+                          "quantity": 1
+                      }
+                  ],
+                  "total": {
+                      "currency": "USD",
+                      "amount": 1510.55
+                  }
+              }
+          },
+          {
+              "status": "IN_CART",
+              "paymentId": null,
+              "transactionId": null,
+              "offerId": "c715354cf2f702a72eaaaed9da798e102b62f30b65defede20189bc1f3e6ea6d",
+              "flow": "REGULAR",
+              "type": "FLIGHT",
+              "data": {
+                  "offerType": "FLIGHT",
+                  "brandId": "EJ",
+                  "brandLabel": "PREMIUM BUSINESS",
+                  "cabinClass": "Business",
+                  "itineraryPart": [
+                      {
+                          "segments": [
+                              {
+                                  "aircraftLeaseText": "LATAM AIRLINES PERU",
+                                  "arrival": "2024-08-29T19:20:00",
+                                  "bookingClass": "D",
+                                  "cabinClass": "Business",
+                                  "departure": "2024-08-29T16:35:00",
+                                  "destination": "LIM",
+                                  "duration": 225,
+                                  "equipment": "789",
+                                  "fareBasis": "DLEEJZ8F",
+                                  "flight": {
+                                      "airlineCode": "LA",
+                                      "departureTerminal": "2",
+                                      "flightNumber": 2696,
+                                      "operatingAirlineCode": "LA"
+                                  },
+                                  "flightsMiles": 1524,
+                                  "origin": "SCL",
+                                  "type": null,
+                                  "amenities": {
+                                      "aircraft": 39,
+                                      "beverage": 5,
+                                      "entertainment": 20,
+                                      "freshFood": 22,
+                                      "layout": 28,
+                                      "power": 6,
+                                      "seat": 2,
+                                      "wifi": 135
+                                  }
+                              }
+                          ],
+                          "stops": 0,
+                          "totalDuration": 225
+                      }
+                  ],
+                  "allowances": [
+                      {
+                          "carryOnBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 35 pounds, or 16 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 16
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 35
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "1",
+                                  "totalWeight": "16 kg / 35 lb"
+                              }
+                          },
+                          "checkedInBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 50 pounds, or 23 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 23
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 50
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "2",
+                                  "totalWeight": "23 kg / 50 lb"
+                              }
+                          },
+                          "passengerType": "ADT"
+                      }
+                  ]
+              },
+              "breakdown": {
+                  "discounts": null,
+                  "surcharges": null,
+                  "fare": [
+                      {
+                          "amount": 0,
+                          "currency": "USD",
+                          "passengerType": "ADT",
+                          "quantity": 1
+                      }
+                  ],
+                  "total": {
+                      "currency": "USD",
+                      "amount": 0
+                  }
+              }
+          }
+      ],
+      "seatOfferList": [
+          {
+              "price": {
+                  "currency": "USD"
+              },
+              "data": {
+                  "seat": {
+                      "code": "4D",
+                      "designations": null,
+                      "price": {
+                          "amount": 0
+                      },
+                      "seatCharacteristics": [
+                          "A"
+                      ]
+                  },
+                  "segment": {
+                      "arrival": "2024-08-09T14:05:00",
+                      "departure": "2024-08-09T09:35:00",
+                      "destination": "SCL",
+                      "origin": "LIM",
+                      "flight": {
+                          "flightNumber": 2697
+                      },
+                      "code": "4D"
+                  }
+              }
+          },
+          {
+              "price": {
+                  "currency": "USD"
+              },
+              "data": {
+                  "seat": {
+                      "code": "1H",
+                      "designations": null,
+                      "price": {
+                          "amount": 0
+                      },
+                      "seatCharacteristics": [
+                          "A"
+                      ],
+                      "tax": {
+                          "amount": 0
+                      }
+                  },
+                  "segment": {
+                      "arrival": "2024-08-29T19:20:00",
+                      "departure": "2024-08-29T16:35:00",
+                      "destination": "LIM",
+                      "origin": "SCL",
+                      "flight": {
+                          "flightNumber": 2696
+                      },
+                      "code": "1H"
+                  }
+              }
+          }
+      ],
+      "orderId": "LA5449569ERCM",
+      "userId": null,
+      "countryCode": "PE",
+      "originalCountryCode": "PE",
+      "orderTracking": {
+          "trackingId": "a90d21da-44a8-4dfd-b3b9-67b7acb1b1ed",
+          "userId": null,
+          "userEmail": null,
+          "migrated": false,
+          "orderOriginCode": null,
+          "origin": "WEB",
+          "originDetail": "PERSONAS",
+          "standAlone": null
+      },
+      "status": "IN_SHOPPING",
+      "breakdownStatus": "READY",
+      "creationDateTime": 1721833393008,
+      "updateDateTime": 1721834363947,
+      "reservation": null,
+      "purchaseResponse": [],
+      "incidentInformation": {
+          "contingency": false,
+          "incident": null
+      },
+      "destinationAirportCode": "SCL",
+      "flightType": "ROUND_TRIP",
+      "itineraryDates": [
+          {
+              "departure": "2024-08-09T09:35:00",
+              "arrival": "2024-08-09T14:05:00"
+          },
+          {
+              "departure": "2024-08-29T16:35:00",
+              "arrival": "2024-08-29T19:20:00"
+          }
+      ],
+      "totalPrice": {
+          "currency": "USD",
+          "amount": 1510.55,
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "displayA11Y": "1510.55 Dólares americanos"
+      },
+      "trip": {
+          "tripId": "85813b04-f52c-4bcb-9878-8591f7696783",
+          "offerIds": [
+              "e6c28ff83f8ca65e7bdb0f57ed9fd5ffd56acae38998ca3d61bee4584a7e9b67",
+              "c715354cf2f702a72eaaaed9da798e102b62f30b65defede20189bc1f3e6ea6d"
+          ],
+          "offerType": "FLIGHT",
+          "passengers": [
+              {
+                  "passengerInfo": {
+                      "type": "ADT",
+                      "emails": "WALVDEV@GMAIL.COM",
+                      "age": 24
+                  },
+                  "documentInfo": {
+                      "documentNumber": "73039855",
+                      "issuingCountry": "PE"
+                  }
+              }
+          ]
+      }
+  },
+  "passengers": {
+      "total": 1,
+      "quantityType": {
+          "adults": 1,
+          "childrens": 0,
+          "infants": 0
+      }
+  },
+  "country": {
+      "value": "PE",
+      "label": "Peru",
+      "callingCode": "51"
+  },
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJjNzU3YTJiMy01YjExLTQ2NTAtYmYyMi0yZTNmOTYwZjkzNmMiLCJ1c2VySWQiOiIiLCJsb2dpbklkIjoiIiwiYWN0aXZlIjpmYWxzZSwicm9sZXMiOltdLCJwZXJtaXNzaW9ucyI6W10sImZsb3ciOiJyZXZlbnVlIiwiaWF0IjoxNzIxODM0MzgxLCJleHAiOjE3MjE4MzU0NjF9.h2NwzSmkUennfV_XVhIuhsAoB0mjnbm71wOnK9cVmiLVz3WLx6IZgjpQfzPlUoT8nZS7B01xY10xV7NooD3SAQ"
+}
+'''

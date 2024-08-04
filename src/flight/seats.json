@@ -1,0 +1,339 @@
+{
+  "status": "booked",
+  "legs": [
+      {
+          "reasonDisableSeatMap": null,
+          "destination": {
+              "name": "Santiago de Chile",
+              "country": "Chile",
+              "airportName": "Aeropuerto Internacional Comodoro Arturo Merino Benítez",
+              "iataCode": "SCL",
+              "isoCountryCode": "CL",
+              "isoCityCode": "SCL"
+          },
+          "origin": {
+              "name": "Lima",
+              "country": "Perú",
+              "airportName": "J Chavez Intl.",
+              "iataCode": "LIM",
+              "isoCountryCode": "PE",
+              "isoCityCode": "LIM"
+          },
+          "itinerary": {
+              "departure": "2024-08-09T09:35:00",
+              "arrival": "2024-08-09T14:05:00",
+              "travelTime": {
+                  "hours": 4,
+                  "minutes": 30
+              },
+              "itineraryIndex": 0,
+              "flightIndex": 0,
+              "indexOfItinerary": 0,
+              "tripDirection": "outbound",
+              "totalFlightOfItinerary": 1,
+              "flightCode": "LA2697"
+          },
+          "equipment": "789",
+          "flightCode": "LA2697",
+          "cabinName": "premium business",
+          "brandLabel": "Premium Business",
+          "countInfant": 0,
+          "countChild": 0,
+          "countAdult": 1,
+          "cabins": [
+              {
+                  "name": "Business",
+                  "visibleHeaderColumns": true,
+                  "seatColumns": [
+                      "LEFT_SIDE",
+                      "A",
+                      "C",
+                      "AISLE",
+                      "D",
+                      "H",
+                      "AISLE",
+                      "J",
+                      "L",
+                      "RIGHT_SIDE"
+                  ],
+                  "seatRows": [
+                      {
+                          "zoneCode": "PREMIUM_BUSINESS",
+                          "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                          "latamPlus": false,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "seatNumber": "1A",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "available": true,
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "seatNumber": "1C",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "analyticsZoneLabel": "Premium Business",
+                                  "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "1D",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "PREMIUM_BUSINESS",
+                                  "analyticsZoneLabel": "Premium Business",
+                                  "uniqueZoneCode": "PREMIUM_BUSINESS_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 60.17,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": 1,
+                                  "seatNumber": null,
+                                  "slotCode": "AISLE",
+                                  "uniqueZoneCode": "undefined_0",
+                                  "isRequirementShow": false
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "Economy",
+                  "visibleHeaderColumns": true,
+                  "seatColumns": [
+                      "LEFT_SIDE",
+                      "A",
+                      "B",
+                      "C",
+                      "AISLE",
+                      "D",
+                      "F",
+                      "H",
+                      "AISLE",
+                      "J",
+                      "K",
+                      "L",
+                      "RIGHT_SIDE"
+                  ],
+                  "seatRows": [
+                      {
+                          "zoneCode": "FIRST_ROW",
+                          "uniqueZoneCode": "FIRST_ROW_0",
+                          "latamPlus": true,
+                          "isMoreSpace": true,
+                          "seats": [
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": true,
+                                  "rowNumber": null,
+                                  "seatNumber": "12C",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "FIRST_ROW",
+                                  "analyticsZoneLabel": "Extra Space",
+                                  "uniqueZoneCode": "FIRST_ROW_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 10.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      },
+                      {
+                          "zoneCode": "STANDARD",
+                          "uniqueZoneCode": "STANDARD_0",
+                          "latamPlus": false,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "18A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": false,
+                                  "available": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "18B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": false,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      },
+                      {
+                          "zoneCode": "EXIT",
+                          "uniqueZoneCode": "EXIT_0",
+                          "latamPlus": true,
+                          "isMoreSpace": false,
+                          "seats": [
+                              {
+                                  "latamPlus": false,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "30A",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "STANDARD",
+                                  "analyticsZoneLabel": "Standard",
+                                  "uniqueZoneCode": "STANDARD_0",
+                                  "isRequirementShow": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              },
+                              {
+                                  "latamPlus": true,
+                                  "isMoreSpace": false,
+                                  "rowNumber": null,
+                                  "seatNumber": "30B",
+                                  "slotCode": "SEAT",
+                                  "zoneCode": "EXIT",
+                                  "analyticsZoneLabel": "Emergency Seats",
+                                  "positionCode": "MIDDLE",
+                                  "uniqueZoneCode": "EXIT_0",
+                                  "isRequirementShow": true,
+                                  "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+                                  "price": {
+                                    "amount": 25.00,
+                                    "currency": "USD"
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "zones": [
+              {
+                  "zoneCode": "PREMIUM_BUSINESS"
+              },
+              {
+                  "zoneCode": "FIRST_ROW"
+              },
+              {
+                  "zoneCode": "EXIT"
+              },
+              {
+                  "zoneCode": "STANDARD"
+              }
+          ],
+          "flightOperatorName": "LATAM Airlines",
+          "uniqId": "LIM-SCL"
+      }
+  ],
+  "zones": [
+      {
+          "zoneCode": "FIRST_ROW",
+          "minPrice": {
+              "amount": 71,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "FRONT_SEATS",
+          "minPrice": {
+              "amount": 46,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "EXIT",
+          "minPrice": {
+              "amount": 46,
+              "currency": "USD"
+          },
+          "availableZone": true
+      },
+      {
+          "zoneCode": "STANDARD",
+          "minPrice": {
+              "amount": 20,
+              "currency": "USD"
+          },
+          "availableZone": true
+      }
+  ],
+  "fullSegment": false,
+  "timestamp": 1721833490
+}

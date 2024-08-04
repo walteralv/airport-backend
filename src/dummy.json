@@ -1,0 +1,119 @@
+{
+  "outboundFlights": [
+    {
+      "flight_id": 1,
+      "flight_number": "AA100",
+      "airline": "American Airlines",
+      "departure_time": "2024-07-21T08:00:00.000Z",
+      "arrival_time": "2024-07-21T12:00:00.000Z",
+      "origin_airport_id": 1,
+      "destination_airport_id": 2,
+      "status": "Scheduled",
+      "origin_airport": {
+        "airport_id": 1,
+        "name": "Los Angeles International",
+        "city": "Los Angeles",
+        "country": "USA",
+        "IATA_code": "LAX",
+        "ICAO_code": "KLAX",
+        "status": "Active"
+      },
+      "destination_airport": {
+        "airport_id": 2,
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA",
+        "IATA_code": "JFK",
+        "ICAO_code": "KJFK",
+        "status": "Active"
+      },
+      "Seats": [
+        {
+          "seat_id": 1,
+          "flight_id": 1,
+          "seat_number": "1A",
+          "class": "Economy",
+          "seat_type": "Window",
+          "available": true,
+          "price": "199.99"
+        },
+        {
+          "seat_id": 2,
+          "flight_id": 1,
+          "seat_number": "1B",
+          "class": "Economy",
+          "seat_type": "Aisle",
+          "available": true,
+          "price": "199.99"
+        },
+        {
+          "seat_id": 5,
+          "flight_id": 1,
+          "seat_number": "1A",
+          "class": "Economy",
+          "seat_type": "Window",
+          "available": true,
+          "price": "200"
+        },
+        {
+          "seat_id": 6,
+          "flight_id": 1,
+          "seat_number": "1B",
+          "class": "Economy",
+          "seat_type": "Aisle",
+          "available": true,
+          "price": "200"
+        },
+        {
+          "seat_id": 11,
+          "flight_id": 1,
+          "seat_number": "1A",
+          "class": "Economy",
+          "seat_type": "Window",
+          "available": true,
+          "price": "200"
+        },
+        {
+          "seat_id": 12,
+          "flight_id": 1,
+          "seat_number": "1B",
+          "class": "Economy",
+          "seat_type": "Aisle",
+          "available": true,
+          "price": "200"
+        }
+      ]
+    }
+  ],
+  "returnFlights": [
+    {
+      "flight_id": 16,
+      "flight_number": "DL500",
+      "airline": "Delta Airlines",
+      "departure_time": "2024-07-30T14:00:00.000Z",
+      "arrival_time": "2024-07-30T18:00:00.000Z",
+      "origin_airport_id": 2,
+      "destination_airport_id": 1,
+      "status": "scheduled",
+      "origin_airport": {
+        "airport_id": 2,
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA",
+        "IATA_code": "JFK",
+        "ICAO_code": "KJFK",
+        "status": "Active"
+      },
+      "destination_airport": {
+        "airport_id": 1,
+        "name": "Los Angeles International",
+        "city": "Los Angeles",
+        "country": "USA",
+        "IATA_code": "LAX",
+        "ICAO_code": "KLAX",
+        "status": "Active"
+      },
+      "Seats": []
+    }
+  ]
+}

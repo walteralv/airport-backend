@@ -1,0 +1,193 @@
+{
+  "orderId": "LA5443945HUPV",
+  "passengers": [
+      {
+          "id": "ADT_1",
+          "name": null,
+          "displayName": null,
+          "firstName": null,
+          "lastName": null,
+          "passengerType": "ADULT"
+      }
+  ],
+  "currency": "USD",
+  "status": "booked",
+  "isNDC": false,
+  "isMiles": false,
+  "availableToSellAncillaries": {
+      "available": true,
+      "reasonDisabled": null
+  },
+  "containsCodeShare": false,
+  "segments": [
+      {
+          "origin": "LIM",
+          "originCity": "Lima",
+          "destination": "MIA",
+          "destinationCity": "Miami",
+          "departure": "2024-08-01T13:30:00",
+          "arrival": "2024-08-01T20:30:00",
+          "flightCode": "LA2694",
+          "isoCountryOriginCode": "PE",
+          "isoCountryDestinationCode": "US",
+          "countInfant": 0,
+          "countChild": 0,
+          "countAdult": 1,
+          "businessUnit": "international",
+          "cabinName": "economy",
+          "cabinCode": "ECONOMY",
+          "brandLabel": "Standard",
+          "brandLabelCode": "STANDARD",
+          "uniqId": "LIM-MIA",
+          "flightOperators": {
+              "flightOperatorNames": [
+                  "LATAM Airlines"
+              ],
+              "isExternalOperator": false
+          },
+          "baggages": [],
+          "baggagesIncluded": {
+              "checkedInBaggage": [
+                  {
+                      "totalUnits": 1,
+                      "baggageRestrictions": {
+                          "unit": "KILOGRAMS",
+                          "weight": 23
+                      }
+                  }
+              ],
+              "carryOnBaggage": [
+                  {
+                      "totalUnits": 1,
+                      "baggageRestrictions": {
+                          "unit": "KILOGRAMS",
+                          "weight": 10
+                      }
+                  }
+              ]
+          },
+          "flightNumber": "LA2694",
+          "flightIndex": 0
+      },
+      {
+          "origin": "MIA",
+          "originCity": "Miami",
+          "destination": "LIM",
+          "destinationCity": "Lima",
+          "departure": "2024-08-08T00:20:00",
+          "arrival": "2024-08-08T05:00:00",
+          "flightCode": "LA2699",
+          "isoCountryOriginCode": "US",
+          "isoCountryDestinationCode": "PE",
+          "countInfant": 0,
+          "countChild": 0,
+          "countAdult": 1,
+          "businessUnit": "international",
+          "cabinName": "economy",
+          "cabinCode": "ECONOMY",
+          "brandLabel": "Full",
+          "brandLabelCode": "FULL",
+          "uniqId": "MIA-LIM",
+          "flightOperators": {
+              "flightOperatorNames": [
+                  "LATAM Airlines"
+              ],
+              "isExternalOperator": false
+          },
+          "baggages": [],
+          "baggagesIncluded": {
+              "checkedInBaggage": [
+                  {
+                      "totalUnits": 1,
+                      "baggageRestrictions": {
+                          "unit": "KILOGRAMS",
+                          "weight": 23
+                      }
+                  }
+              ],
+              "carryOnBaggage": [
+                  {
+                      "totalUnits": 1,
+                      "baggageRestrictions": {
+                          "unit": "KILOGRAMS",
+                          "weight": 10
+                      }
+                  }
+              ]
+          },
+          "flightNumber": "LA2699",
+          "flightIndex": 1
+      }
+  ],
+  "analytics": {
+      "businessUnit": "international",
+      "cabinName": "economy",
+      "cabinCode": "ECONOMY",
+      "brandLabel": "Standard",
+      "brandLabelCode": "STANDARD"
+  },
+  "isOneWay": false,
+  "redirectRule": {
+      "available": false,
+      "reasonDisabled": null,
+      "home": null,
+      "channel": null
+  },
+  "recordLocator": null,
+  "selectedAncillaries": {
+      "seats": [
+          {
+              "idPassenger": "ADT_1",
+              "status": "booked",
+              "uniqId": "MIA-LIM",
+              "offerId": "ddfa9e09fe4ba9afbfc8fd350f0e88b81b4b7f15eead046dc7b76e2854ed2aea",
+              "seatNumber": "16H",
+              "allowSeatChange": true,
+              "flightIndex": 1,
+              "flightCode": "LA2699",
+              "purchased": false,
+              "segment": {
+                  "origin": {
+                      "iataCode": "MIA"
+                  },
+                  "destination": {
+                      "iataCode": "LIM"
+                  },
+                  "uniqId": "MIA-LIM",
+                  "flightCode": "LA2699",
+                  "flightIndex": 1
+              }
+          },
+          {
+              "idPassenger": "ADT_1",
+              "status": "booked",
+              "uniqId": "LIM-MIA",
+              "offerId": "140137eabe2e6280be40ac845c3e67400c89d5f7564c4912fbc023c8be5734d6",
+              "seatNumber": "12F",
+              "allowSeatChange": true,
+              "flightIndex": 0,
+              "flightCode": "LA2694",
+              "purchased": false,
+              "segment": {
+                  "origin": {
+                      "iataCode": "LIM"
+                  },
+                  "destination": {
+                      "iataCode": "MIA"
+                  },
+                  "uniqId": "LIM-MIA",
+                  "flightCode": "LA2694",
+                  "flightIndex": 0
+              }
+          }
+      ],
+      "baggages": [],
+      "boarding": []
+  },
+  "orderWithOtherOperator": false,
+  "flightOperatorNames": [],
+  "excludedAncillaries": {
+      "priorityBoarding": false
+  },
+  "timestamp": 1721900354
+}

@@ -1,0 +1,364 @@
+{
+  "order": {
+      "flightOfferList": [
+          {
+              "status": "IN_CART",
+              "paymentId": null,
+              "transactionId": null,
+              "offerId": "e6c28ff83f8ca65e7bdb0f57ed9fd5ffd56acae38998ca3d61bee4584a7e9b67",
+              "flow": "REGULAR",
+              "type": "FLIGHT",
+              "data": {
+                  "offerType": "FLIGHT",
+                  "brandId": "EJ",
+                  "brandLabel": "PREMIUM BUSINESS",
+                  "cabinClass": "Business",
+                  "itineraryPart": [
+                      {
+                          "segments": [
+                              {
+                                  "aircraftLeaseText": "LATAM AIRLINES PERU",
+                                  "arrival": "2024-08-09T14:05:00",
+                                  "bookingClass": "D",
+                                  "cabinClass": "Business",
+                                  "departure": "2024-08-09T09:35:00",
+                                  "destination": "SCL",
+                                  "duration": 210,
+                                  "equipment": "789",
+                                  "fareBasis": "DLEEJZ8F",
+                                  "flight": {
+                                      "airlineCode": "LA",
+                                      "arrivalTerminal": "2",
+                                      "flightNumber": 2697,
+                                      "operatingAirlineCode": "LA"
+                                  },
+                                  "flightsMiles": 1524,
+                                  "origin": "LIM",
+                                  "type": null
+                              }
+                          ],
+                          "stops": 0,
+                          "totalDuration": 210
+                      }
+                  ],
+                  "allowances": [
+                      {
+                          "carryOnBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 35 pounds, or 16 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 16
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 35
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "1",
+                                  "totalWeight": "16 kg / 35 lb"
+                              }
+                          },
+                          "checkedInBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 50 pounds, or 23 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 23
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 50
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "2",
+                                  "totalWeight": "23 kg / 50 lb"
+                              }
+                          },
+                          "passengerType": "ADT"
+                      }
+                  ]
+              },
+              "breakdown": {
+                  "discounts": null,
+                  "surcharges": null,
+                  "fare": [
+                      {
+                          "amount": 1220,
+                          "currency": "USD",
+                          "passengerType": "ADT",
+                          "quantity": 1
+                      }
+                  ],
+                  "total": {
+                      "currency": "USD",
+                      "amount": 1510.55
+                  }
+              }
+          },
+          {
+              "status": "IN_CART",
+              "paymentId": null,
+              "transactionId": null,
+              "offerId": "c715354cf2f702a72eaaaed9da798e102b62f30b65defede20189bc1f3e6ea6d",
+              "flow": "REGULAR",
+              "type": "FLIGHT",
+              "data": {
+                  "offerType": "FLIGHT",
+                  "brandId": "EJ",
+                  "brandLabel": "PREMIUM BUSINESS",
+                  "cabinClass": "Business",
+                  "itineraryPart": [
+                      {
+                          "segments": [
+                              {
+                                  "aircraftLeaseText": "LATAM AIRLINES PERU",
+                                  "arrival": "2024-08-29T19:20:00",
+                                  "bookingClass": "D",
+                                  "cabinClass": "Business",
+                                  "departure": "2024-08-29T16:35:00",
+                                  "destination": "LIM",
+                                  "duration": 225,
+                                  "equipment": "789",
+                                  "fareBasis": "DLEEJZ8F",
+                                  "flight": {
+                                      "airlineCode": "LA",
+                                      "departureTerminal": "2",
+                                      "flightNumber": 2696,
+                                      "operatingAirlineCode": "LA"
+                                  },
+                                  "flightsMiles": 1524,
+                                  "origin": "SCL",
+                                  "type": null,
+                                  "amenities": {
+                                      "aircraft": 39,
+                                      "beverage": 5,
+                                      "entertainment": 20,
+                                      "freshFood": 22,
+                                      "layout": 28,
+                                      "power": 6,
+                                      "seat": 2,
+                                      "wifi": 135
+                                  }
+                              }
+                          ],
+                          "stops": 0,
+                          "totalDuration": 225
+                      }
+                  ],
+                  "allowances": [
+                      {
+                          "carryOnBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 35 pounds, or 16 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 16
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 35
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "1",
+                                  "totalWeight": "16 kg / 35 lb"
+                              }
+                          },
+                          "checkedInBaggage": {
+                              "freeBaggageAllowance": {
+                                  "baggageRestrictions": [
+                                      {
+                                          "weightDescription": "up to 50 pounds, or 23 kilograms",
+                                          "weightDetails": [
+                                              {
+                                                  "unit": "KILOGRAMS",
+                                                  "weight": 23
+                                              },
+                                              {
+                                                  "unit": "POUNDS",
+                                                  "weight": 50
+                                              }
+                                          ]
+                                      }
+                                  ],
+                                  "totalUnits": "2",
+                                  "totalWeight": "23 kg / 50 lb"
+                              }
+                          },
+                          "passengerType": "ADT"
+                      }
+                  ]
+              },
+              "breakdown": {
+                  "discounts": null,
+                  "surcharges": null,
+                  "fare": [
+                      {
+                          "amount": 0,
+                          "currency": "USD",
+                          "passengerType": "ADT",
+                          "quantity": 1
+                      }
+                  ],
+                  "total": {
+                      "currency": "USD",
+                      "amount": 0
+                  }
+              }
+          }
+      ],
+      "seatOfferList": [
+          {
+              "price": {
+                  "currency": "USD"
+              },
+              "data": {
+                  "seat": {
+                      "code": "4D",
+                      "designations": null,
+                      "price": {
+                          "amount": 0
+                      },
+                      "seatCharacteristics": [
+                          "A"
+                      ]
+                  },
+                  "segment": {
+                      "arrival": "2024-08-09T14:05:00",
+                      "departure": "2024-08-09T09:35:00",
+                      "destination": "SCL",
+                      "origin": "LIM",
+                      "flight": {
+                          "flightNumber": 2697
+                      },
+                      "code": "4D"
+                  }
+              }
+          },
+          {
+              "price": {
+                  "currency": "USD"
+              },
+              "data": {
+                  "seat": {
+                      "code": "1H",
+                      "designations": null,
+                      "price": {
+                          "amount": 0
+                      },
+                      "seatCharacteristics": [
+                          "A"
+                      ],
+                      "tax": {
+                          "amount": 0
+                      }
+                  },
+                  "segment": {
+                      "arrival": "2024-08-29T19:20:00",
+                      "departure": "2024-08-29T16:35:00",
+                      "destination": "LIM",
+                      "origin": "SCL",
+                      "flight": {
+                          "flightNumber": 2696
+                      },
+                      "code": "1H"
+                  }
+              }
+          }
+      ],
+      "orderId": "LA5449569ERCM",
+      "userId": null,
+      "countryCode": "PE",
+      "originalCountryCode": "PE",
+      "orderTracking": {
+          "trackingId": "a90d21da-44a8-4dfd-b3b9-67b7acb1b1ed",
+          "userId": null,
+          "userEmail": null,
+          "migrated": false,
+          "orderOriginCode": null,
+          "origin": "WEB",
+          "originDetail": "PERSONAS",
+          "standAlone": null
+      },
+      "status": "IN_SHOPPING",
+      "breakdownStatus": "READY",
+      "creationDateTime": 1721833393008,
+      "updateDateTime": 1721834363947,
+      "reservation": null,
+      "purchaseResponse": [],
+      "incidentInformation": {
+          "contingency": false,
+          "incident": null
+      },
+      "destinationAirportCode": "SCL",
+      "flightType": "ROUND_TRIP",
+      "itineraryDates": [
+          {
+              "departure": "2024-08-09T09:35:00",
+              "arrival": "2024-08-09T14:05:00"
+          },
+          {
+              "departure": "2024-08-29T16:35:00",
+              "arrival": "2024-08-29T19:20:00"
+          }
+      ],
+      "totalPrice": {
+          "currency": "USD",
+          "amount": 1510.55,
+          "displayCurrency": "USD",
+          "displayAmount": " 1,510.55",
+          "display": "USD 1,510.55",
+          "displayA11Y": "1510.55 Dólares americanos"
+      },
+      "trip": {
+          "tripId": "85813b04-f52c-4bcb-9878-8591f7696783",
+          "offerIds": [
+              "e6c28ff83f8ca65e7bdb0f57ed9fd5ffd56acae38998ca3d61bee4584a7e9b67",
+              "c715354cf2f702a72eaaaed9da798e102b62f30b65defede20189bc1f3e6ea6d"
+          ],
+          "offerType": "FLIGHT",
+          "passengers": [
+              {
+                  "passengerInfo": {
+                      "type": "ADT",
+                      "emails": "WALVDEV@GMAIL.COM",
+                      "age": 24
+                  },
+                  "documentInfo": {
+                      "documentNumber": "73039855",
+                      "issuingCountry": "PE"
+                  }
+              }
+          ]
+      }
+  },
+  "passengers": {
+      "total": 1,
+      "quantityType": {
+          "adults": 1,
+          "childrens": 0,
+          "infants": 0
+      }
+  },
+  "country": {
+      "value": "PE",
+      "label": "Peru",
+      "callingCode": "51"
+  },
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJjNzU3YTJiMy01YjExLTQ2NTAtYmYyMi0yZTNmOTYwZjkzNmMiLCJ1c2VySWQiOiIiLCJsb2dpbklkIjoiIiwiYWN0aXZlIjpmYWxzZSwicm9sZXMiOltdLCJwZXJtaXNzaW9ucyI6W10sImZsb3ciOiJyZXZlbnVlIiwiaWF0IjoxNzIxODM0MzgxLCJleHAiOjE3MjE4MzU0NjF9.h2NwzSmkUennfV_XVhIuhsAoB0mjnbm71wOnK9cVmiLVz3WLx6IZgjpQfzPlUoT8nZS7B01xY10xV7NooD3SAQ"
+}
