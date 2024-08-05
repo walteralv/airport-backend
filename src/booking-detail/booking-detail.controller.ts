@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { BookingDetailService } from './booking-detail.service';
 import { CreateBookingDetailDto } from './dto/create-booking-detail.dto';
 import { UpdateBookingDetailDto } from './dto/update-booking-detail.dto';
@@ -11,7 +19,10 @@ export class BookingDetailController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new booking detail' })
-  @ApiResponse({ status: 201, description: 'The booking detail has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The booking detail has been successfully created.',
+  })
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   create(@Body() createBookingDetailDto: CreateBookingDetailDto) {
     return this.bookingDetailService.create(createBookingDetailDto);
@@ -34,15 +45,24 @@ export class BookingDetailController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update a booking detail by ID' })
-  @ApiResponse({ status: 200, description: 'The booking detail has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking detail has been successfully updated.',
+  })
   @ApiResponse({ status: 404, description: 'Booking detail not found.' })
-  update(@Param('id') id: string, @Body() updateBookingDetailDto: UpdateBookingDetailDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateBookingDetailDto: UpdateBookingDetailDto,
+  ) {
     return this.bookingDetailService.update(+id, updateBookingDetailDto);
   }
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete a booking detail by ID' })
-  @ApiResponse({ status: 200, description: 'The booking detail has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking detail has been successfully deleted.',
+  })
   @ApiResponse({ status: 404, description: 'Booking detail not found.' })
   remove(@Param('id') id: string) {
     return this.bookingDetailService.remove(+id);

@@ -1,5 +1,13 @@
 // src/stopover/stopover.controller.ts
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { StopOverService } from './stop-over.service';
 import { CreateStopOverDto } from './dto/create-stop-over.dto';
@@ -12,7 +20,10 @@ export class StopOverController {
 
   @Post()
   @ApiOperation({ summary: 'Create stopover' })
-  @ApiResponse({ status: 201, description: 'The stopover has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The stopover has been successfully created.',
+  })
   create(@Body() createStopOverDto: CreateStopOverDto) {
     return this.stopOverService.create(createStopOverDto);
   }
@@ -33,14 +44,23 @@ export class StopOverController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update stopover' })
-  @ApiResponse({ status: 200, description: 'The stopover has been successfully updated.' })
-  update(@Param('id') id: string, @Body() updateStopOverDto: UpdateStopOverDto) {
+  @ApiResponse({
+    status: 200,
+    description: 'The stopover has been successfully updated.',
+  })
+  update(
+    @Param('id') id: string,
+    @Body() updateStopOverDto: UpdateStopOverDto,
+  ) {
     return this.stopOverService.update(+id, updateStopOverDto);
   }
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete stopover' })
-  @ApiResponse({ status: 200, description: 'The stopover has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The stopover has been successfully deleted.',
+  })
   remove(@Param('id') id: string) {
     return this.stopOverService.remove(+id);
   }

@@ -22,7 +22,12 @@ export class FlightService {
   }
 
   async searchFlights(searchFlightsDto: SearchFlightsDto) {
-    const { origin_airport_id, destination_airport_id, departure_date, return_date } = searchFlightsDto;
+    const {
+      origin_airport_id,
+      destination_airport_id,
+      departure_date,
+      return_date,
+    } = searchFlightsDto;
 
     const outboundFlights = await this.prisma.flight.findMany({
       where: {
@@ -30,23 +35,23 @@ export class FlightService {
         destination_airport_id: Number(destination_airport_id),
         departure_time: {
           gte: new Date(`${departure_date}T00:00:00.000Z`),
-          lte: new Date(`${departure_date}T23:59:59.999Z`)
-        }
+          lte: new Date(`${departure_date}T23:59:59.999Z`),
+        },
       },
       include: {
         origin_airport: true,
         destination_airport: true,
         StopOvers: {
           include: {
-            airport: true
-          }
+            airport: true,
+          },
         },
         FlightFares: {
           include: {
-            fare: true
-          }
-        }
-      }
+            fare: true,
+          },
+        },
+      },
     });
 
     let returnFlights = [];
@@ -57,23 +62,23 @@ export class FlightService {
           destination_airport_id: Number(origin_airport_id),
           departure_time: {
             gte: new Date(`${return_date}T00:00:00.000Z`),
-            lte: new Date(`${return_date}T23:59:59.999Z`)
-          }
+            lte: new Date(`${return_date}T23:59:59.999Z`),
+          },
         },
         include: {
           origin_airport: true,
           destination_airport: true,
           StopOvers: {
             include: {
-              airport: true
-            }
+              airport: true,
+            },
           },
           FlightFares: {
             include: {
-              fare: true
-            }
-          }
-        }
+              fare: true,
+            },
+          },
+        },
       });
     }
 

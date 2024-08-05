@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { PassengerService } from './passenger.service';
 import { CreatePassengerDto } from './dto/create-passenger.dto';
 import { UpdatePassengerDto } from './dto/update-passenger.dto';
@@ -11,7 +19,10 @@ export class PassengerController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new passenger' })
-  @ApiResponse({ status: 201, description: 'The passenger has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The passenger has been successfully created.',
+  })
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   create(@Body() createPassengerDto: CreatePassengerDto) {
     return this.passengerService.create(createPassengerDto);
@@ -34,15 +45,24 @@ export class PassengerController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update a passenger by ID' })
-  @ApiResponse({ status: 200, description: 'The passenger has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The passenger has been successfully updated.',
+  })
   @ApiResponse({ status: 404, description: 'Passenger not found.' })
-  update(@Param('id') id: string, @Body() updatePassengerDto: UpdatePassengerDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updatePassengerDto: UpdatePassengerDto,
+  ) {
     return this.passengerService.update(+id, updatePassengerDto);
   }
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete a passenger by ID' })
-  @ApiResponse({ status: 200, description: 'The passenger has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The passenger has been successfully deleted.',
+  })
   @ApiResponse({ status: 404, description: 'Passenger not found.' })
   remove(@Param('id') id: string) {
     return this.passengerService.remove(+id);

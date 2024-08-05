@@ -29,7 +29,7 @@ export class SeatService {
 
     const zones = this.calculateZones(seats);
 
-    const seatsData = seats.map(seat => ({
+    const seatsData = seats.map((seat) => ({
       seatNumber: seat.seat_number,
       class: seat.class,
       seatType: seat.seat_type,
@@ -50,7 +50,7 @@ export class SeatService {
   private calculateZones(seats: any[]) {
     const zoneMap = {};
 
-    seats.forEach(seat => {
+    seats.forEach((seat) => {
       const zone = seat.class;
       if (!zoneMap[zone]) {
         zoneMap[zone] = {

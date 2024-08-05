@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { AirportService } from './airport.service';
 import { CreateAirportDto } from './dto/create-airport.dto';
 import { UpdateAirportDto } from './dto/update-airport.dto';
@@ -11,7 +19,10 @@ export class AirportController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new airport' })
-  @ApiResponse({ status: 201, description: 'The airport has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The airport has been successfully created.',
+  })
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   create(@Body() createAirportDto: CreateAirportDto) {
     return this.airportService.create(createAirportDto);
@@ -34,7 +45,10 @@ export class AirportController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update an airport by ID' })
-  @ApiResponse({ status: 200, description: 'The airport has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The airport has been successfully updated.',
+  })
   @ApiResponse({ status: 404, description: 'Airport not found.' })
   update(@Param('id') id: string, @Body() updateAirportDto: UpdateAirportDto) {
     return this.airportService.update(+id, updateAirportDto);
@@ -42,7 +56,10 @@ export class AirportController {
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete an airport by ID' })
-  @ApiResponse({ status: 200, description: 'The airport has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The airport has been successfully deleted.',
+  })
   @ApiResponse({ status: 404, description: 'Airport not found.' })
   remove(@Param('id') id: string) {
     return this.airportService.remove(+id);

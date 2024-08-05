@@ -15,7 +15,20 @@ import { FareModule } from './fare/fare.module';
 import { FlightFareModule } from './flight-fare/flight-fare.module';
 
 @Module({
-  imports: [PrismaModule, AirportModule, FlightModule, PassengerModule, SeatModule, BaggageOptionModule, BookingModule, BookingDetailModule, StopOverModule, UserModule, FareModule, FlightFareModule],
+  imports: [
+    PrismaModule,
+    AirportModule,
+    FlightModule,
+    PassengerModule,
+    SeatModule,
+    BaggageOptionModule,
+    BookingModule,
+    BookingDetailModule,
+    StopOverModule,
+    UserModule,
+    FareModule,
+    FlightFareModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

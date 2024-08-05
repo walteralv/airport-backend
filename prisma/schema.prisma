@@ -20,125 +20,125 @@ model User {
 }
 
 model Airport {
-  airport_id Int    @id @default(autoincrement())
-  name       String @db.VarChar(255)
-  city       String @db.VarChar(255)
-  country    String @db.VarChar(255)
-  IATA_code  String @db.Char(3)
-  ICAO_code  String @db.Char(4)
-  status     String @db.VarChar(50)
-  FlightsOrigin      Flight[] @relation("FlightsOrigin")
-  FlightsDestination Flight[] @relation("FlightsDestination")
+  airport_id         Int        @id @default(autoincrement())
+  name               String     @db.VarChar(255)
+  city               String     @db.VarChar(255)
+  country            String     @db.VarChar(255)
+  IATA_code          String     @db.Char(3)
+  ICAO_code          String     @db.Char(4)
+  status             String     @db.VarChar(50)
+  FlightsOrigin      Flight[]   @relation("FlightsOrigin")
+  FlightsDestination Flight[]   @relation("FlightsDestination")
   stopOvers          StopOver[]
 }
 
 model Flight {
-  flight_id           Int       @id @default(autoincrement())
-  flight_number       String    @db.VarChar(10)
-  airline             String    @db.VarChar(255)
-  origin_airport_id   Int
+  flight_id              Int             @id @default(autoincrement())
+  flight_number          String          @db.VarChar(10)
+  airline                String          @db.VarChar(255)
+  origin_airport_id      Int
   destination_airport_id Int
-  departure_time      DateTime
-  arrival_time        DateTime
-  stopOvers           Int
-  duration            Int
-  status              String    @db.VarChar(50)
-  equipment           String    @db.VarChar(50)
-  aircraft_lease_text String    @db.VarChar(255)
-  origin_airport      Airport   @relation("FlightsOrigin", fields: [origin_airport_id], references: [airport_id])
-  destination_airport Airport   @relation("FlightsDestination", fields: [destination_airport_id], references: [airport_id])
-  StopOvers           StopOver[]
-  Seats               Seat[]
-  BookingDetails      BookingDetail[]
-  FlightFares         FlightFare[]
+  departure_time         DateTime
+  arrival_time           DateTime
+  stopOvers              Int
+  duration               Int
+  status                 String          @db.VarChar(50)
+  equipment              String          @db.VarChar(50)
+  aircraft_lease_text    String          @db.VarChar(255)
+  origin_airport         Airport         @relation("FlightsOrigin", fields: [origin_airport_id], references: [airport_id])
+  destination_airport    Airport         @relation("FlightsDestination", fields: [destination_airport_id], references: [airport_id])
+  StopOvers              StopOver[]
+  Seats                  Seat[]
+  BookingDetails         BookingDetail[]
+  FlightFares            FlightFare[]
 }
 
 model StopOver {
-  stop_id           Int       @id @default(autoincrement())
-  flight_id         Int
-  stop_number       Int
-  airport_id        Int
-  arrival_time      DateTime
-  departure_time    DateTime
-  layover_duration  Int
-  status            String    @db.VarChar(50)
-  flight            Flight    @relation(fields: [flight_id], references: [flight_id])
-  airport           Airport   @relation(fields: [airport_id], references: [airport_id])
+  stop_id          Int      @id @default(autoincrement())
+  flight_id        Int
+  stop_number      Int
+  airport_id       Int
+  arrival_time     DateTime
+  departure_time   DateTime
+  layover_duration Int
+  status           String   @db.VarChar(50)
+  flight           Flight   @relation(fields: [flight_id], references: [flight_id])
+  airport          Airport  @relation(fields: [airport_id], references: [airport_id])
 }
 
 model Passenger {
-  passenger_id     Int       @id @default(autoincrement())
-  first_name       String    @db.VarChar(255)
-  last_name        String    @db.VarChar(255)
-  passport_number  String    @db.VarChar(50)
-  nationality      String    @db.VarChar(50)
-  phone            String    @db.VarChar(25)
-  email            String    @db.VarChar(50)
-  BookingDetails   BookingDetail[]
+  passenger_id    Int             @id @default(autoincrement())
+  first_name      String          @db.VarChar(255)
+  last_name       String          @db.VarChar(255)
+  passport_number String          @db.VarChar(50)
+  nationality     String          @db.VarChar(50)
+  phone           String          @db.VarChar(25)
+  email           String          @db.VarChar(50)
+  BookingDetails  BookingDetail[]
 }
 
 model Seat {
-  seat_id        Int       @id @default(autoincrement())
+  seat_id        Int             @id @default(autoincrement())
   flight_id      Int
-  seat_number    String    @db.VarChar(10)
-  class          String    @db.VarChar(50)
-  seat_type      String    @db.VarChar(50)
+  seat_number    String          @db.VarChar(10)
+  class          String          @db.VarChar(50)
+  seat_type      String          @db.VarChar(50)
   available      Boolean
-  price          Decimal   @db.Decimal(10, 2)
-  flight         Flight    @relation(fields: [flight_id], references: [flight_id])
+  price          Decimal         @db.Decimal(10, 2)
+  flight         Flight          @relation(fields: [flight_id], references: [flight_id])
   BookingDetails BookingDetail[]
 }
 
 model BaggageOption {
-  baggage_id     Int       @id @default(autoincrement())
-  type           String    @db.VarChar(50)
-  price          Decimal   @db.Decimal(10, 2)
+  baggage_id     Int             @id @default(autoincrement())
+  type           String          @db.VarChar(50)
+  price          Decimal         @db.Decimal(10, 2)
   BookingDetails BookingDetail[]
 }
 
 model Booking {
-  booking_id     Int       @id @default(autoincrement())
+  booking_id     Int             @id @default(autoincrement())
   booking_date   DateTime
-  total_price    Decimal   @db.Decimal(10, 2)
-  status         String    @db.VarChar(50)
+  total_price    Decimal         @db.Decimal(10, 2)
+  status         String          @db.VarChar(50)
   BookingDetails BookingDetail[]
 }
 
 model BookingDetail {
-  booking_detail_id Int       @id @default(autoincrement())
+  booking_detail_id Int           @id @default(autoincrement())
   booking_id        Int
   passenger_id      Int
   flight_id         Int
   seat_id           Int
   baggage_id        Int
-  booking           Booking   @relation(fields: [booking_id], references: [booking_id])
-  passenger         Passenger @relation(fields: [passenger_id], references: [passenger_id])
-  flight            Flight    @relation(fields: [flight_id], references: [flight_id])
-  seat              Seat      @relation(fields: [seat_id], references: [seat_id])
+  booking           Booking       @relation(fields: [booking_id], references: [booking_id])
+  passenger         Passenger     @relation(fields: [passenger_id], references: [passenger_id])
+  flight            Flight        @relation(fields: [flight_id], references: [flight_id])
+  seat              Seat          @relation(fields: [seat_id], references: [seat_id])
   baggage           BaggageOption @relation(fields: [baggage_id], references: [baggage_id])
 }
 
 model Fare {
-  fare_id       Int     @id @default(autoincrement())
-  fare_type     String  @db.VarChar(50)
-  description   String  @db.VarChar(255)
-  cabin_id      String  @db.VarChar(10)
-  cabin_label   String  @db.VarChar(50)
-  FlightFares   FlightFare[]
+  fare_id     Int          @id @default(autoincrement())
+  fare_type   String       @db.VarChar(50)
+  description String       @db.VarChar(255)
+  cabin_id    String       @db.VarChar(10)
+  cabin_label String       @db.VarChar(50)
+  FlightFares FlightFare[]
 }
 
 model FlightFare {
-  flight_fare_id            Int     @id @default(autoincrement())
-  flight_id                 Int
-  fare_id                   Int
-  price                     Decimal @db.Decimal(10, 2)
-  currency                  String  @db.VarChar(10)
-  display_currency          String  @db.VarChar(10)
-  display_amount            String  @db.VarChar(50)
-  lowest_price_difference   Decimal @db.Decimal(10, 2)
-  lowest_price_brand        String  @db.VarChar(50)
-  available                 Boolean
-  attributes                Json
-  flight                    Flight  @relation(fields: [flight_id], references: [flight_id])
-  fare                      Fare    @relation(fields: [fare_id], references: [fare_id])
+  flight_fare_id          Int     @id @default(autoincrement())
+  flight_id               Int
+  fare_id                 Int
+  price                   Decimal @db.Decimal(10, 2)
+  currency                String  @db.VarChar(10)
+  display_currency        String  @db.VarChar(10)
+  display_amount          String  @db.VarChar(50)
+  lowest_price_difference Decimal @db.Decimal(10, 2)
+  lowest_price_brand      String  @db.VarChar(50)
+  available               Boolean
+  attributes              Json
+  flight                  Flight  @relation(fields: [flight_id], references: [flight_id])
+  fare                    Fare    @relation(fields: [fare_id], references: [fare_id])
 }

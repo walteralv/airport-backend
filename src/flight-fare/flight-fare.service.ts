@@ -21,7 +21,10 @@ export class FlightFareService {
   }
 
   async update(id: number, data: UpdateFlightFareDto) {
-    return this.prisma.flightFare.update({ where: { flight_fare_id: id }, data });
+    return this.prisma.flightFare.update({
+      where: { flight_fare_id: id },
+      data,
+    });
   }
 
   async remove(id: number) {

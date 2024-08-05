@@ -1,4 +1,13 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Query,
+} from '@nestjs/common';
 import { FlightService } from './flight.service';
 import { CreateFlightDto } from './dto/create-flight.dto';
 import { UpdateFlightDto } from './dto/update-flight.dto';
@@ -12,7 +21,10 @@ export class FlightController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new flight' })
-  @ApiResponse({ status: 201, description: 'The flight has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The flight has been successfully created.',
+  })
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   create(@Body() createFlightDto: CreateFlightDto) {
     return this.flightService.create(createFlightDto);
@@ -30,10 +42,10 @@ export class FlightController {
   @ApiResponse({ status: 200, description: 'Return available flights.' })
   async searchFlights(@Query() searchFlightsDto: SearchFlightsDto) {
     const flights = await this.flightService.searchFlights(searchFlightsDto);
-    flights.outboundFlights
-    flights.outboundFlights.map(flights =>{
+    flights.outboundFlights;
+    flights.outboundFlights.map((flights) => {
       // flights.FlightFares.reduce()
-    })
+    });
     const transformFlight = (flight) => {
       const itinerary = [];
 
@@ -89,7 +101,7 @@ export class FlightController {
         });
       }
 
-      const flightFares = flight.FlightFares.map(flightFare => ({
+      const flightFares = flight.FlightFares.map((flightFare) => ({
         fareId: flightFare.flight_fare_id,
         fareText: flightFare.fare.fare_type,
         fareDescription: flightFare.fare.description,
@@ -106,17 +118,17 @@ export class FlightController {
           displayCurrency: flightFare.display_currency,
           display_currency: flightFare.display_currency,
           display_amount: flightFare.display_amount,
-          display: `${flightFare.display_currency} ${flightFare.display_amount}`
+          display: `${flightFare.display_currency} ${flightFare.display_amount}`,
         },
         lowestPriceDifference: {
           lowest_price_difference: flightFare.lowest_price_difference,
-          display: `${flightFare.display_currency} ${flightFare.lowest_price_difference.toFixed(2)}`
+          display: `${flightFare.display_currency} ${flightFare.lowest_price_difference.toFixed(2)}`,
         },
         lowestPriceBrand: flightFare.lowest_price_brand,
         attributes: flightFare.attributes,
       }));
 
-      const lowestPrice = flight.FlightFares
+      const lowestPrice = flight.FlightFares;
 
       return {
         flightId: flight.flight_id,
@@ -131,20 +143,26 @@ export class FlightController {
         aircraftLeaseText: flight.aircraft_lease_text,
         origin: {
           departure: flight.departure_time,
-          departureTime: flight.departure_time.toISOString().split('T')[1].slice(0, 5),
+          departureTime: flight.departure_time
+            .toISOString()
+            .split('T')[1]
+            .slice(0, 5),
           iataCode: flight.origin_airport.IATA_code,
           airport: flight.origin_airport.name,
           city: flight.origin_airport.city,
         },
         destination: {
           arrival: flight.arrival_time,
-          arrivalTime: flight.arrival_time.toISOString().split('T')[1].slice(0, 5),
+          arrivalTime: flight.arrival_time
+            .toISOString()
+            .split('T')[1]
+            .slice(0, 5),
           iataCode: flight.destination_airport.IATA_code,
           airport: flight.destination_airport.name,
           city: flight.destination_airport.city,
         },
         itinerary,
-        flightFares
+        flightFares,
       };
     };
 
@@ -189,7 +207,10 @@ export class FlightController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update a flight by ID' })
-  @ApiResponse({ status: 200, description: 'The flight has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The flight has been successfully updated.',
+  })
   @ApiResponse({ status: 404, description: 'Flight not found.' })
   update(@Param('id') id: string, @Body() updateFlightDto: UpdateFlightDto) {
     return this.flightService.update(+id, updateFlightDto);
@@ -197,7 +218,10 @@ export class FlightController {
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete a flight by ID' })
-  @ApiResponse({ status: 200, description: 'The flight has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The flight has been successfully deleted.',
+  })
   @ApiResponse({ status: 404, description: 'Flight not found.' })
   remove(@Param('id') id: string) {
     return this.flightService.remove(+id);

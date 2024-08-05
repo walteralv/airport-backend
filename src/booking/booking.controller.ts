@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { BookingService } from './booking.service';
 import { CreateBookingDto } from './dto/create-booking.dto';
 import { UpdateBookingDto } from './dto/update-booking.dto';
@@ -11,7 +19,10 @@ export class BookingController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new booking' })
-  @ApiResponse({ status: 201, description: 'The booking has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The booking has been successfully created.',
+  })
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   create(@Body() createBookingDto: CreateBookingDto) {
     return this.bookingService.create(createBookingDto);
@@ -34,7 +45,10 @@ export class BookingController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update a booking by ID' })
-  @ApiResponse({ status: 200, description: 'The booking has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking has been successfully updated.',
+  })
   @ApiResponse({ status: 404, description: 'Booking not found.' })
   update(@Param('id') id: string, @Body() updateBookingDto: UpdateBookingDto) {
     return this.bookingService.update(+id, updateBookingDto);
@@ -42,7 +56,10 @@ export class BookingController {
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete a booking by ID' })
-  @ApiResponse({ status: 200, description: 'The booking has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking has been successfully deleted.',
+  })
   @ApiResponse({ status: 404, description: 'Booking not found.' })
   remove(@Param('id') id: string) {
     return this.bookingService.remove(+id);
