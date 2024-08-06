@@ -1,26 +1,48 @@
 // src/flight/dto/search-flights.dto.ts
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { IsInt, IsOptional, IsDateString } from 'class-validator';
+import { IsOptional, IsString, IsNotEmpty, IsEnum } from 'class-validator';
 
 export class SearchFlightsDto {
-  @ApiProperty({ example: 1, description: 'Origin airport ID' })
-  @IsInt()
-  origin_airport_id: number;
+  @ApiProperty({
+    description: 'IATA code of the origin airport',
+    example: 'LIM',
+  })
+  @IsString()
+  @IsNotEmpty()
+  origin_airport_code: string;
 
-  @ApiProperty({ example: 2, description: 'Destination airport ID' })
-  @IsInt()
-  destination_airport_id: number;
+  @ApiProperty({
+    description: 'IATA code of the destination airport',
+    example: 'CUZ',
+  })
+  @IsString()
+  @IsNotEmpty()
+  destination_airport_code: string;
 
-  @ApiProperty({ example: '2024-08-01', description: 'Departure date' })
-  @IsDateString()
+  @ApiProperty({ description: 'Departure date', example: '2024-08-07' })
+  @IsString()
+  @IsNotEmpty()
   departure_date: string;
 
-  @ApiPropertyOptional({ example: '2024-08-10', description: 'Return date' })
+  @ApiPropertyOptional({
+    description: 'Return date for round trips',
+    example: '2024-08-14',
+  })
+  @IsString()
   @IsOptional()
-  @IsDateString()
   return_date?: string;
 
-  @ApiProperty({ example: 2, description: 'Number of passengers' })
-  @IsInt()
-  passengers: number;
+  @ApiProperty({
+    description: 'Type of trip',
+    enum: ['oneWay', 'roundTrip'],
+    example: 'roundTrip',
+  })
+  @IsEnum(['oneWay', 'roundTrip'])
+  @IsNotEmpty()
+  trip_type: 'oneWay' | 'roundTrip';
+
+  @ApiProperty({ description: 'Number of seats', example: '2' })
+  @IsString()
+  @IsNotEmpty()
+  seats: string;
 }

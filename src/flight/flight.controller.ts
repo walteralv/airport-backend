@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   Query,
+  BadRequestException,
 } from '@nestjs/common';
 import { FlightService } from './flight.service';
 import { CreateFlightDto } from './dto/create-flight.dto';
@@ -41,8 +42,35 @@ export class FlightController {
   @ApiOperation({ summary: 'Search available flights' })
   @ApiResponse({ status: 200, description: 'Return available flights.' })
   async searchFlights(@Query() searchFlightsDto: SearchFlightsDto) {
+    console.log('Received search params:', searchFlightsDto);
+
+    // Verificar cada campo requerido individualmente
+    if (!searchFlightsDto.origin_airport_code) {
+      throw new BadRequestException('Missing origin airport code');
+    }
+    if (!searchFlightsDto.destination_airport_code) {
+      throw new BadRequestException('Missing destination airport code');
+    }
+    if (!searchFlightsDto.departure_date) {
+      throw new BadRequestException('Missing departure date');
+    }
+    if (!searchFlightsDto.trip_type) {
+      throw new BadRequestException('Missing trip type');
+    }
+    if (!searchFlightsDto.seats) {
+      throw new BadRequestException('Missing number of seats');
+    }
+
     const flights = await this.flightService.searchFlights(searchFlightsDto);
-    return this.transformFlightResults(flights);
+    console.log('Flights found:', flights);
+
+    const transformedResults = this.transformFlightResults(flights);
+    console.log(
+      'Transformed results:',
+      JSON.stringify(transformedResults, null, 2),
+    );
+
+    return transformedResults;
   }
 
   @Get(':id')
