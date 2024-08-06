@@ -21,7 +21,10 @@ export class BaggageOptionService {
   }
 
   async update(id: number, data: UpdateBaggageOptionDto) {
-    return this.prisma.baggageOption.update({ where: { baggage_id: id }, data });
+    return this.prisma.baggageOption.update({
+      where: { baggage_id: id },
+      data,
+    });
   }
 
   async remove(id: number) {

@@ -24,7 +24,10 @@ export class BookingDetailService {
     });
   }
 
-  async update(id: number, data: UpdateBookingDetailDto): Promise<BookingDetail> {
+  async update(
+    id: number,
+    data: UpdateBookingDetailDto,
+  ): Promise<BookingDetail> {
     return this.prisma.bookingDetail.update({
       where: { booking_detail_id: id },
       data,

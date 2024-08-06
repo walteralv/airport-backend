@@ -27,4 +27,18 @@ export class AirportService {
   async remove(id: number) {
     return this.prisma.airport.delete({ where: { airport_id: id } });
   }
+
+  async searchAirports(searchTerm: string) {
+    return this.prisma.airport.findMany({
+      where: {
+        OR: [
+          { name: { contains: searchTerm, mode: 'insensitive' } },
+          { city: { contains: searchTerm, mode: 'insensitive' } },
+          { country: { contains: searchTerm, mode: 'insensitive' } },
+          { IATA_code: { contains: searchTerm, mode: 'insensitive' } },
+        ],
+      },
+      take: 10,
+    });
+  }
 }

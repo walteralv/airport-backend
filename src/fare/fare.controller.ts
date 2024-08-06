@@ -1,5 +1,13 @@
 // src/fare/fare.controller.ts
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { FareService } from './fare.service';
 import { CreateFareDto } from './dto/create-fare.dto';
@@ -12,7 +20,10 @@ export class FareController {
 
   @Post()
   @ApiOperation({ summary: 'Create fare' })
-  @ApiResponse({ status: 201, description: 'The fare has been successfully created.' })
+  @ApiResponse({
+    status: 201,
+    description: 'The fare has been successfully created.',
+  })
   create(@Body() createFareDto: CreateFareDto) {
     return this.fareService.create(createFareDto);
   }
@@ -33,14 +44,20 @@ export class FareController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update fare' })
-  @ApiResponse({ status: 200, description: 'The fare has been successfully updated.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The fare has been successfully updated.',
+  })
   update(@Param('id') id: string, @Body() updateFareDto: UpdateFareDto) {
     return this.fareService.update(+id, updateFareDto);
   }
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete fare' })
-  @ApiResponse({ status: 200, description: 'The fare has been successfully deleted.' })
+  @ApiResponse({
+    status: 200,
+    description: 'The fare has been successfully deleted.',
+  })
   remove(@Param('id') id: string) {
     return this.fareService.remove(+id);
   }
