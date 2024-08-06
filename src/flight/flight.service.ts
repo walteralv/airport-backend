@@ -1,5 +1,5 @@
 // src/flight/flight.service.ts
-import { Injectable } from '@nestjs/common';
+import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateFlightDto } from './dto/create-flight.dto';
 import { UpdateFlightDto } from './dto/update-flight.dto';
@@ -29,13 +29,40 @@ export class FlightService {
       return_date,
     } = searchFlightsDto;
 
-    const outboundFlights = await this.prisma.flight.findMany({
+    if (!origin_airport_id || !destination_airport_id || !departure_date) {
+      throw new BadRequestException('Missing required search parameters');
+    }
+
+    const [outboundFlights, returnFlights] = await Promise.all([
+      this.findFlights(
+        origin_airport_id,
+        destination_airport_id,
+        departure_date,
+      ),
+      return_date
+        ? this.findFlights(
+            destination_airport_id,
+            origin_airport_id,
+            return_date,
+          )
+        : Promise.resolve([]),
+    ]);
+
+    return { outboundFlights, returnFlights };
+  }
+
+  private async findFlights(
+    originId: number,
+    destinationId: number,
+    date: string,
+  ) {
+    return this.prisma.flight.findMany({
       where: {
-        origin_airport_id: Number(origin_airport_id),
-        destination_airport_id: Number(destination_airport_id),
+        origin_airport_id: Number(originId),
+        destination_airport_id: Number(destinationId),
         departure_time: {
-          gte: new Date(`${departure_date}T00:00:00.000Z`),
-          lte: new Date(`${departure_date}T23:59:59.999Z`),
+          gte: new Date(`${date}T00:00:00.000Z`),
+          lte: new Date(`${date}T23:59:59.999Z`),
         },
       },
       include: {
@@ -53,36 +80,6 @@ export class FlightService {
         },
       },
     });
-
-    let returnFlights = [];
-    if (return_date) {
-      returnFlights = await this.prisma.flight.findMany({
-        where: {
-          origin_airport_id: Number(destination_airport_id),
-          destination_airport_id: Number(origin_airport_id),
-          departure_time: {
-            gte: new Date(`${return_date}T00:00:00.000Z`),
-            lte: new Date(`${return_date}T23:59:59.999Z`),
-          },
-        },
-        include: {
-          origin_airport: true,
-          destination_airport: true,
-          StopOvers: {
-            include: {
-              airport: true,
-            },
-          },
-          FlightFares: {
-            include: {
-              fare: true,
-            },
-          },
-        },
-      });
-    }
-
-    return { outboundFlights, returnFlights };
   }
 
   async update(id: number, data: UpdateFlightDto) {

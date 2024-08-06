@@ -72,4 +72,14 @@ export class SeatController {
   remove(@Param('id') id: string) {
     return this.seatService.remove(+id);
   }
+
+  @Get('available/:flightId')
+  @ApiOperation({ summary: 'Get available seats for a flight' })
+  @ApiResponse({
+    status: 200,
+    description: 'Return available seats for a flight.',
+  })
+  async getAvailableSeatsForFlight(@Param('flightId') flightId: string) {
+    return this.seatService.getAvailableSeatsForFlight(+flightId);
+  }
 }

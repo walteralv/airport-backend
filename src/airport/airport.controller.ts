@@ -6,11 +6,12 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { AirportService } from './airport.service';
 import { CreateAirportDto } from './dto/create-airport.dto';
 import { UpdateAirportDto } from './dto/update-airport.dto';
-import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiQuery } from '@nestjs/swagger';
 
 @ApiTags('airport')
 @Controller('airport')
@@ -33,6 +34,17 @@ export class AirportController {
   @ApiResponse({ status: 200, description: 'Return all airports.' })
   findAll() {
     return this.airportService.findAll();
+  }
+
+  @Get('search')
+  @ApiOperation({ summary: 'Search airports by term' })
+  @ApiResponse({ status: 200, description: 'Return matching airports.' })
+  @ApiQuery({ name: 'term', required: true, type: String })
+  searchAirports(@Query('term') searchTerm: string) {
+    if (!searchTerm || searchTerm.length < 2) {
+      return [];
+    }
+    return this.airportService.searchAirports(searchTerm);
   }
 
   @Get(':id')

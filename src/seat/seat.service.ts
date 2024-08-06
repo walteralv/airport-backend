@@ -89,4 +89,40 @@ export class SeatService {
   async remove(id: number) {
     return this.prisma.seat.delete({ where: { seat_id: id } });
   }
+
+  async getAvailableSeatsForFlight(flightId: number) {
+    const seats = await this.prisma.seat.findMany({
+      where: {
+        flight_id: Number(flightId),
+        available: true,
+      },
+      include: {
+        flight: {
+          include: {
+            origin_airport: true,
+            destination_airport: true,
+          },
+        },
+      },
+    });
+
+    const zones = this.calculateZones(seats);
+
+    const seatsData = seats.map((seat) => ({
+      seatId: seat.seat_id,
+      seatNumber: seat.seat_number,
+      class: seat.class,
+      seatType: seat.seat_type,
+      price: {
+        amount: seat.price,
+        currency: 'USD',
+      },
+    }));
+
+    return {
+      seats: seatsData,
+      zones: zones,
+      fullSegment: seats.length === 0,
+    };
+  }
 }
