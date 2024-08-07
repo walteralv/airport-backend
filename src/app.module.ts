@@ -13,22 +13,10 @@ import { StopOverModule } from './stop-over/stop-over.module';
 import { UserModule } from './user/user.module';
 import { FareModule } from './fare/fare.module';
 import { FlightFareModule } from './flight-fare/flight-fare.module';
+import { AnalyticsModule } from './analytics/analytics.module';
 
 @Module({
-  imports: [
-    PrismaModule,
-    AirportModule,
-    FlightModule,
-    PassengerModule,
-    SeatModule,
-    BaggageOptionModule,
-    BookingModule,
-    BookingDetailModule,
-    StopOverModule,
-    UserModule,
-    FareModule,
-    FlightFareModule,
-  ],
+  imports: [PrismaModule, AirportModule, FlightModule, PassengerModule, SeatModule, BaggageOptionModule, BookingModule, BookingDetailModule, StopOverModule, UserModule, FareModule, FlightFareModule, AnalyticsModule],
   controllers: [AppController],
   providers: [AppService],
 })
