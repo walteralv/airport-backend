@@ -143,6 +143,9 @@ CREATE TABLE "FlightFare" (
     CONSTRAINT "FlightFare_pkey" PRIMARY KEY ("flight_fare_id")
 );
 
+-- CreateIndex
+CREATE UNIQUE INDEX "Passenger_passport_number_key" ON "Passenger"("passport_number");
+
 -- AddForeignKey
 ALTER TABLE "Flight" ADD CONSTRAINT "Flight_origin_airport_id_fkey" FOREIGN KEY ("origin_airport_id") REFERENCES "Airport"("airport_id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
