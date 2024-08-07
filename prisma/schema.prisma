@@ -70,7 +70,7 @@ model Passenger {
   passenger_id    Int             @id @default(autoincrement())
   first_name      String          @db.VarChar(255)
   last_name       String          @db.VarChar(255)
-  passport_number String          @db.VarChar(50)
+  passport_number String          @unique @db.VarChar(50)
   nationality     String          @db.VarChar(50)
   phone           String          @db.VarChar(25)
   email           String          @db.VarChar(50)
