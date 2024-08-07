@@ -12,7 +12,7 @@ function getSeatType(row: number) {
 }
 
 async function main() {
-  // Crear aeropuertos (expandido a 10)
+  // Crear aeropuertos (expandido a 20)
   console.log('Iniciando la creación de aeropuertos...');
   const airports = [
     {
@@ -95,6 +95,86 @@ async function main() {
       ICAO_code: 'SPUR',
       status: 'active',
     },
+    {
+      name: 'Aeropuerto Internacional Comandante FAP Germán Arias Graziani',
+      city: 'Huaraz',
+      country: 'Perú',
+      IATA_code: 'ATA',
+      ICAO_code: 'SPHZ',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto Internacional Coronel FAP Alfredo Mendívil Duarte',
+      city: 'Ayacucho',
+      country: 'Perú',
+      IATA_code: 'AYP',
+      ICAO_code: 'SPHO',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto Internacional Padre Aldamiz',
+      city: 'Puerto Maldonado',
+      country: 'Perú',
+      IATA_code: 'PEM',
+      ICAO_code: 'SPTU',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Andahuaylas',
+      city: 'Andahuaylas',
+      country: 'Perú',
+      IATA_code: 'ANS',
+      ICAO_code: 'SPHA',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Atalaya',
+      city: 'Atalaya',
+      country: 'Perú',
+      IATA_code: 'ALD',
+      ICAO_code: 'SPAY',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Chachapoyas',
+      city: 'Chachapoyas',
+      country: 'Perú',
+      IATA_code: 'CHH',
+      ICAO_code: 'SPPY',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Huánuco',
+      city: 'Huánuco',
+      country: 'Perú',
+      IATA_code: 'HUU',
+      ICAO_code: 'SPNC',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Jauja',
+      city: 'Jauja',
+      country: 'Perú',
+      IATA_code: 'JAU',
+      ICAO_code: 'SPJJ',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Tingo María',
+      city: 'Tingo María',
+      country: 'Perú',
+      IATA_code: 'TGI',
+      ICAO_code: 'SPGM',
+      status: 'active',
+    },
+    {
+      name: 'Aeropuerto de Tumbes',
+      city: 'Tumbes',
+      country: 'Perú',
+      IATA_code: 'TBP',
+      ICAO_code: 'SPME',
+      status: 'active',
+    },
   ];
 
   for (const airport of airports) {
@@ -113,6 +193,12 @@ async function main() {
       cabin_label: 'Económica',
     },
     {
+      fare_type: 'Flexible',
+      description: 'Tarifa económica con flexibilidad',
+      cabin_id: 'FLX',
+      cabin_label: 'Económica Flexible',
+    },
+    {
       fare_type: 'Business',
       description: 'Tarifa business con servicios premium',
       cabin_id: 'BUS',
@@ -124,6 +210,21 @@ async function main() {
     await prisma.fare.create({ data: fare });
   }
   console.log('Tarifas creadas exitosamente.');
+
+  // Crear opciones de equipaje
+  console.log('Iniciando la creación de opciones de equipaje...');
+  const baggageOptions = [
+    { type: 'Equipaje de mano', price: 0 },
+    { type: 'Maleta 23kg', price: 30 },
+    { type: 'Maleta adicional 23kg', price: 50 },
+    { type: 'Equipaje deportivo', price: 60 },
+    { type: 'Mascota en cabina', price: 70 },
+  ];
+
+  for (const option of baggageOptions) {
+    await prisma.baggageOption.create({ data: option });
+  }
+  console.log('Opciones de equipaje creadas exitosamente.');
 
   // Crear vuelos y tarifas de vuelo
   const airlines = [
@@ -139,16 +240,16 @@ async function main() {
     'Embraer E190',
   ];
 
-  const oneWayFlights = 30;
-  const roundTripFlights = 70;
+  const oneWayFlights = 150;
+  const roundTripFlights = 250;
 
   console.log('Iniciando la creación de vuelos de ida...');
 
-  for (let i = 0; i < oneWayFlights; i++) {
-    const originId = Math.floor(Math.random() * 10) + 1;
+  async function createFlight(isReturn = false) {
+    const originId = Math.floor(Math.random() * 20) + 1;
     let destinationId;
     do {
-      destinationId = Math.floor(Math.random() * 10) + 1;
+      destinationId = Math.floor(Math.random() * 20) + 1;
     } while (destinationId === originId);
 
     const airline = airlines[Math.floor(Math.random() * airlines.length)];
@@ -161,10 +262,10 @@ async function main() {
     );
 
     const flight = {
-      flight_number: `PE${String(i + 1).padStart(3, '0')}`,
+      flight_number: `PE${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`,
       airline,
-      origin_airport_id: originId,
-      destination_airport_id: destinationId,
+      origin_airport_id: isReturn ? destinationId : originId,
+      destination_airport_id: isReturn ? originId : destinationId,
       departure_time: departureDate,
       arrival_time: arrivalDate,
       stopOvers: Math.random() < 0.2 ? 1 : 0,
@@ -175,16 +276,19 @@ async function main() {
     };
 
     const createdFlight = await prisma.flight.create({ data: flight });
-    console.log(`Vuelo de ida ${createdFlight.flight_number} creado.`);
+    console.log(
+      `Vuelo ${isReturn ? 'de vuelta' : 'de ida'} ${createdFlight.flight_number} creado.`,
+    );
 
     // Crear tarifas de vuelo para cada vuelo
     const economyPrice = Math.floor(Math.random() * (200 - 50) + 50);
+    const flexiblePrice = economyPrice * 1.3;
     const businessPrice = Math.floor(Math.random() * (500 - 200) + 200);
 
     const flightFares = [
       {
         flight_id: createdFlight.flight_id,
-        fare_id: 1, // Economy
+        fare_id: 1,
         price: economyPrice,
         currency: 'USD',
         display_currency: 'USD',
@@ -196,7 +300,19 @@ async function main() {
       },
       {
         flight_id: createdFlight.flight_id,
-        fare_id: 2, // Business
+        fare_id: 2,
+        price: flexiblePrice,
+        currency: 'USD',
+        display_currency: 'USD',
+        display_amount: flexiblePrice.toFixed(2),
+        lowest_price_difference: flexiblePrice - economyPrice,
+        lowest_price_brand: airline,
+        available: true,
+        attributes: {},
+      },
+      {
+        flight_id: createdFlight.flight_id,
+        fare_id: 3,
         price: businessPrice,
         currency: 'USD',
         display_currency: 'USD',
@@ -233,179 +349,21 @@ async function main() {
     console.log(
       `Asientos creados para el vuelo ${createdFlight.flight_number}.`,
     );
+
+    return createdFlight;
+  }
+
+  for (let i = 0; i < oneWayFlights; i++) {
+    await createFlight();
   }
   console.log('Vuelos de ida creados exitosamente.');
 
   console.log('Iniciando la creación de vuelos de ida y vuelta...');
-
   for (let i = 0; i < roundTripFlights; i++) {
-    const originId = Math.floor(Math.random() * 10) + 1;
-    let destinationId;
-    do {
-      destinationId = Math.floor(Math.random() * 10) + 1;
-    } while (destinationId === originId);
-
-    const airline = airlines[Math.floor(Math.random() * airlines.length)];
-    const equipment = equipments[Math.floor(Math.random() * equipments.length)];
-
-    const departureDate = new Date(2024, 7, 6 + Math.floor(Math.random() * 62));
-    const arrivalDate = new Date(
-      departureDate.getTime() +
-        (Math.floor(Math.random() * 5) + 1) * 60 * 60 * 1000,
-    );
-
-    const returnDepartureDate = new Date(
-      arrivalDate.getTime() + 2 * 24 * 60 * 60 * 1000,
-    ); // 2 días después
-    const returnArrivalDate = new Date(
-      returnDepartureDate.getTime() +
-        (Math.floor(Math.random() * 5) + 1) * 60 * 60 * 1000,
-    );
-
-    const flight = {
-      flight_number: `PE${String(i + 1 + oneWayFlights).padStart(3, '0')}`,
-      airline,
-      origin_airport_id: originId,
-      destination_airport_id: destinationId,
-      departure_time: departureDate,
-      arrival_time: arrivalDate,
-      stopOvers: Math.random() < 0.2 ? 1 : 0,
-      duration: (arrivalDate.getTime() - departureDate.getTime()) / (60 * 1000),
-      status: 'scheduled',
-      equipment,
-      aircraft_lease_text: `Operated by ${airline}`,
-    };
-
-    const returnFlight = {
-      flight_number: `PE${String(i + 1 + oneWayFlights + roundTripFlights).padStart(3, '0')}`,
-      airline,
-      origin_airport_id: destinationId,
-      destination_airport_id: originId,
-      departure_time: returnDepartureDate,
-      arrival_time: returnArrivalDate,
-      stopOvers: Math.random() < 0.2 ? 1 : 0,
-      duration:
-        (returnArrivalDate.getTime() - returnDepartureDate.getTime()) /
-        (60 * 1000),
-      status: 'scheduled',
-      equipment,
-      aircraft_lease_text: `Operated by ${airline}`,
-    };
-
-    const createdFlight = await prisma.flight.create({ data: flight });
-    console.log(`Vuelo de ida ${createdFlight.flight_number} creado.`);
-    const createdReturnFlight = await prisma.flight.create({
-      data: returnFlight,
-    });
-    console.log(`Vuelo de vuelta ${createdReturnFlight.flight_number} creado.`);
-
-    // Crear tarifas de vuelo para cada vuelo
-    const economyPrice = Math.floor(Math.random() * (200 - 50) + 50);
-    const businessPrice = Math.floor(Math.random() * (500 - 200) + 200);
-
-    const flightFares = [
-      {
-        flight_id: createdFlight.flight_id,
-        fare_id: 1, // Economy
-        price: economyPrice,
-        currency: 'USD',
-        display_currency: 'USD',
-        display_amount: economyPrice.toFixed(2),
-        lowest_price_difference: 0,
-        lowest_price_brand: airline,
-        available: true,
-        attributes: {},
-      },
-      {
-        flight_id: createdFlight.flight_id,
-        fare_id: 2, // Business
-        price: businessPrice,
-        currency: 'USD',
-        display_currency: 'USD',
-        display_amount: businessPrice.toFixed(2),
-        lowest_price_difference: businessPrice - economyPrice,
-        lowest_price_brand: airline,
-        available: true,
-        attributes: {},
-      },
-    ];
-
-    const returnFlightFares = [
-      {
-        flight_id: createdReturnFlight.flight_id,
-        fare_id: 1, // Economy
-        price: economyPrice,
-        currency: 'USD',
-        display_currency: 'USD',
-        display_amount: economyPrice.toFixed(2),
-        lowest_price_difference: 0,
-        lowest_price_brand: airline,
-        available: true,
-        attributes: {},
-      },
-      {
-        flight_id: createdReturnFlight.flight_id,
-        fare_id: 2, // Business
-        price: businessPrice,
-        currency: 'USD',
-        display_currency: 'USD',
-        display_amount: businessPrice.toFixed(2),
-        lowest_price_difference: businessPrice - economyPrice,
-        lowest_price_brand: airline,
-        available: true,
-        attributes: {},
-      },
-    ];
-
-    for (const flightFare of flightFares) {
-      await prisma.flightFare.create({ data: flightFare });
-    }
-
-    for (const flightFare of returnFlightFares) {
-      await prisma.flightFare.create({ data: flightFare });
-    }
-
+    const outboundFlight = await createFlight();
+    const returnFlight = await createFlight(true);
     console.log(
-      `Creando asientos para el vuelo de ida ${createdFlight.flight_number}...`,
-    );
-    const columns = ['A', 'B', 'C', 'D', 'E', 'F'];
-    for (let row = 1; row <= 20; row++) {
-      for (const col of columns) {
-        const seatNumber = `${col}${row}`;
-        const seat = {
-          flight_id: createdFlight.flight_id,
-          seat_number: `${createdFlight.flight_id}-${seatNumber}`,
-          class: row <= 3 ? 'Business' : 'Economy',
-          seat_type: getSeatType(row),
-          available: true,
-          price: row <= 3 ? businessPrice : economyPrice,
-        };
-        await prisma.seat.create({ data: seat });
-      }
-    }
-    console.log(
-      `Asientos creados para el vuelo de ida ${createdFlight.flight_number}.`,
-    );
-
-    console.log(
-      `Creando asientos para el vuelo de vuelta ${createdReturnFlight.flight_number}...`,
-    );
-    for (let row = 1; row <= 20; row++) {
-      for (const col of columns) {
-        const seatNumber = `${col}${row}`;
-        const seat = {
-          flight_id: createdReturnFlight.flight_id,
-          seat_number: `${createdReturnFlight.flight_id}-${seatNumber}`,
-          class: row <= 3 ? 'Business' : 'Economy',
-          seat_type: getSeatType(row),
-          available: true,
-          price: row <= 3 ? businessPrice : economyPrice,
-        };
-        await prisma.seat.create({ data: seat });
-      }
-    }
-    console.log(
-      `Asientos creados para el vuelo de vuelta ${createdReturnFlight.flight_number}.`,
+      `Vuelo de ida y vuelta creado: ${outboundFlight.flight_number} - ${returnFlight.flight_number}`,
     );
   }
   console.log('Vuelos de ida y vuelta creados exitosamente.');

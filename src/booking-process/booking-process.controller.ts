@@ -1,4 +1,4 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { BookingProcessService } from './booking-process.service';
 
@@ -16,5 +16,16 @@ export class BookingProcessController {
   @ApiResponse({ status: 400, description: 'Bad Request.' })
   async processBooking(@Body() bookingData: any) {
     return this.bookingProcessService.processBooking(bookingData);
+  }
+
+  @Get(':id')
+  @ApiOperation({ summary: 'Get booking summary' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking summary has been successfully retrieved.',
+  })
+  @ApiResponse({ status: 404, description: 'Booking not found.' })
+  async getBookingSummary(@Param('id') id: string) {
+    return this.bookingProcessService.getBookingSummary(+id);
   }
 }

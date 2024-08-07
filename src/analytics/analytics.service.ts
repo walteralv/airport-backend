@@ -33,14 +33,14 @@ export class AnalyticsService {
       GROUP BY 
         a.airport_id, a.name;
     `;
-  
+
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       num_flights: Number(row.num_flights),
       rank: Number(row.rank),
     }));
-  
+
     return formattedResult;
   }
 
@@ -58,7 +58,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       avg_duration_hours: Number(row.avg_duration_hours),
       overall_avg_duration_hours: Number(row.overall_avg_duration_hours),
@@ -104,7 +104,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       duration_hours: Number(row.duration_hours),
       rank_desc: Number(row.rank_desc),
@@ -133,7 +133,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       total_passengers: Number(row.total_passengers),
       avg_passengers: Number(row.avg_passengers),
@@ -158,7 +158,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       num_flights: Number(row.num_flights),
       moving_avg_7_days: Number(row.moving_avg_7_days),
@@ -182,7 +182,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       seat_occupancy_rate: Number(row.seat_occupancy_rate),
     }));
@@ -214,7 +214,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       avg_layover_duration_minutes: Number(row.avg_layover_duration_minutes),
     }));
@@ -247,7 +247,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       price: Number(row.price),
       average_price: Number(row.average_price),
@@ -313,7 +313,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       outbound_flights: Number(row.outbound_flights),
       inbound_flights: Number(row.inbound_flights),
@@ -345,7 +345,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       count: Number(row.count),
     }));
@@ -391,7 +391,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       flight_count: Number(row.flight_count),
     }));
@@ -420,7 +420,7 @@ export class AnalyticsService {
     `;
 
     // Convertir BigInt a Number
-    const formattedResult = result.map(row => ({
+    const formattedResult = result.map((row) => ({
       ...row,
       count: Number(row.count),
     }));

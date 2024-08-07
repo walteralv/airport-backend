@@ -1,4 +1,8 @@
-import { Injectable, BadRequestException } from '@nestjs/common';
+import {
+  Injectable,
+  BadRequestException,
+  NotFoundException,
+} from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { Prisma } from '@prisma/client';
 
@@ -91,7 +95,57 @@ export class BookingProcessService {
         });
       }
 
-      return booking;
+      return {
+        bookingId: booking.booking_id,
+        totalPrice: booking.total_price,
+        status: booking.status,
+      };
     });
+  }
+
+  async getBookingSummary(bookingId: number) {
+    const booking = await this.prisma.booking.findUnique({
+      where: { booking_id: bookingId },
+      include: {
+        BookingDetails: {
+          include: {
+            passenger: true,
+            seat: true,
+            flight: {
+              include: {
+                origin_airport: true,
+                destination_airport: true,
+              },
+            },
+            baggage: true,
+          },
+        },
+      },
+    });
+
+    if (!booking) {
+      throw new NotFoundException(`Booking with ID ${bookingId} not found`);
+    }
+
+    return {
+      bookingId: booking.booking_id,
+      bookingDate: booking.booking_date,
+      totalPrice: booking.total_price,
+      status: booking.status,
+      passengers: booking.BookingDetails.map((detail) => ({
+        firstName: detail.passenger.first_name,
+        lastName: detail.passenger.last_name,
+        passportNumber: detail.passenger.passport_number,
+        seat: detail.seat.seat_number,
+        baggage: detail.baggage.type,
+      })),
+      flight: {
+        flightNumber: booking.BookingDetails[0].flight.flight_number,
+        origin: booking.BookingDetails[0].flight.origin_airport.name,
+        destination: booking.BookingDetails[0].flight.destination_airport.name,
+        departureTime: booking.BookingDetails[0].flight.departure_time,
+        arrivalTime: booking.BookingDetails[0].flight.arrival_time,
+      },
+    };
   }
 }

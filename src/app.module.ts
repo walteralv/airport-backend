@@ -14,9 +14,25 @@ import { UserModule } from './user/user.module';
 import { FareModule } from './fare/fare.module';
 import { FlightFareModule } from './flight-fare/flight-fare.module';
 import { AnalyticsModule } from './analytics/analytics.module';
+import { BookingProcessModule } from './booking-process/booking-process.module';
 
 @Module({
-  imports: [PrismaModule, AirportModule, FlightModule, PassengerModule, SeatModule, BaggageOptionModule, BookingModule, BookingDetailModule, StopOverModule, UserModule, FareModule, FlightFareModule, AnalyticsModule],
+  imports: [
+    PrismaModule,
+    AirportModule,
+    FlightModule,
+    PassengerModule,
+    SeatModule,
+    BaggageOptionModule,
+    BookingModule,
+    BookingDetailModule,
+    StopOverModule,
+    UserModule,
+    FareModule,
+    FlightFareModule,
+    AnalyticsModule,
+    BookingProcessModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
