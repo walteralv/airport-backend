@@ -8,6 +8,7 @@ import {
   Delete,
   Query,
   BadRequestException,
+  InternalServerErrorException,
 } from '@nestjs/common';
 import { FlightService } from './flight.service';
 import { CreateFlightDto } from './dto/create-flight.dto';
@@ -70,7 +71,28 @@ export class FlightController {
       JSON.stringify(transformedResults, null, 2),
     );
 
-    return transformedResults;
+    try {
+      const flights = await this.flightService.searchFlights(searchFlightsDto);
+      console.log('Flights found:', flights);
+
+      const transformedResults = this.transformFlightResults(flights);
+      console.log(
+        'Transformed results:',
+        JSON.stringify(transformedResults, null, 2),
+      );
+
+      // Asegúrate de devolver explícitamente los resultados transformados
+      return {
+        status: 'success',
+        data: transformedResults,
+        message: 'Flights found successfully',
+      };
+    } catch (error) {
+      console.error('Error searching flights:', error);
+      throw new InternalServerErrorException(
+        'An error occurred while searching for flights',
+      );
+    }
   }
 
   @Get(':id')

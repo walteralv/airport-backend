@@ -6,6 +6,8 @@ import {
   Patch,
   Param,
   Delete,
+  NotFoundException,
+  BadRequestException,
 } from '@nestjs/common';
 import { SeatService } from './seat.service';
 import { CreateSeatDto } from './dto/create-seat.dto';
@@ -16,6 +18,29 @@ import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 @Controller('seat')
 export class SeatController {
   constructor(private readonly seatService: SeatService) {}
+
+  @Post('select/:seatId')
+  @ApiOperation({ summary: 'Select a seat' })
+  @ApiResponse({
+    status: 200,
+    description: 'The seat has been successfully selected.',
+  })
+  @ApiResponse({ status: 400, description: 'Bad Request.' })
+  @ApiResponse({ status: 404, description: 'Seat not found.' })
+  async selectSeat(@Param('seatId') seatId: string) {
+    try {
+      const updatedSeat = await this.seatService.selectSeat(+seatId);
+      return updatedSeat;
+    } catch (error) {
+      if (error instanceof NotFoundException) {
+        throw new NotFoundException(error.message);
+      }
+      if (error instanceof BadRequestException) {
+        throw new BadRequestException(error.message);
+      }
+      throw error;
+    }
+  }
 
   @Post()
   @ApiOperation({ summary: 'Create a new seat' })
@@ -45,10 +70,12 @@ export class SeatController {
 
   @Get('flight/:flightId')
   @ApiOperation({ summary: 'Get seats for a flight' })
-  @ApiResponse({ status: 200, description: 'Return seats for a flight.' })
-  async getSeatsByFlightId(@Param('flightId') flightId: number) {
-    const seats = await this.seatService.getSeatsByFlightId(flightId);
-    return seats;
+  @ApiResponse({
+    status: 200,
+    description: 'Return seats for a flight.',
+  })
+  async getSeatsForFlight(@Param('flightId') flightId: string) {
+    return this.seatService.getSeatsForFlight(+flightId);
   }
 
   @Patch(':id')
