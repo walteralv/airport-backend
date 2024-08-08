@@ -1,11 +1,16 @@
-import { Controller, Post, Body, Get, Param } from '@nestjs/common';
+import { Controller, Post, Body, Get, Param, Res } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { BookingProcessService } from './booking-process.service';
+import { PdfTicketService } from './pdf-ticket.service';
+import { Response } from 'express';
 
 @ApiTags('booking-process')
 @Controller('booking-process')
 export class BookingProcessController {
-  constructor(private readonly bookingProcessService: BookingProcessService) {}
+  constructor(
+    private readonly bookingProcessService: BookingProcessService,
+    private readonly pdfTicketService: PdfTicketService,
+  ) {}
 
   @Post()
   @ApiOperation({ summary: 'Process a complete booking' })
@@ -27,5 +32,22 @@ export class BookingProcessController {
   @ApiResponse({ status: 404, description: 'Booking not found.' })
   async getBookingSummary(@Param('id') id: string) {
     return this.bookingProcessService.getBookingSummary(+id);
+  }
+
+  @Get(':id/ticket')
+  @ApiOperation({ summary: 'Get booking ticket as PDF' })
+  @ApiResponse({
+    status: 200,
+    description: 'The booking ticket PDF has been successfully generated.',
+  })
+  @ApiResponse({ status: 404, description: 'Booking not found.' })
+  async getBookingTicket(@Param('id') id: string, @Res() res: Response) {
+    const pdfBuffer = await this.pdfTicketService.generateTicketPdf(+id);
+    res.set({
+      'Content-Type': 'application/pdf',
+      'Content-Disposition': `attachment; filename=ticket-${id}.pdf`,
+      'Content-Length': pdfBuffer.length,
+    });
+    res.end(pdfBuffer);
   }
 }
