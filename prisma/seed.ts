@@ -359,7 +359,7 @@ async function main() {
     const columns = ['A', 'B', 'C', 'D', 'E', 'F'];
     for (let row = 1; row <= 20; row++) {
       for (const col of columns) {
-        const seatNumber = `${row}${col}`;
+        const seatNumber = `${col}${row}`;
         const seat = {
           flight_id: createdFlight.flight_id,
           seat_number: `${createdFlight.flight_id}-${seatNumber}`,
@@ -505,7 +505,7 @@ async function main() {
     const columns = ['A', 'B', 'C', 'D', 'E', 'F'];
     for (let row = 1; row <= 20; row++) {
       for (const col of columns) {
-        const seatNumber = `${row}${col}`;
+        const seatNumber = `${col}${row}`;
         const seat = {
           flight_id: createdFlight.flight_id,
           seat_number: `${createdFlight.flight_id}-${seatNumber}`,
