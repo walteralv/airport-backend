@@ -8,9 +8,10 @@ import {
   BookingStatusCounts,
   AverageArrivalTimes,
   LongestAndShortestFlights,
-  PassengerCounts,
+  SeatCounts,
   AverageFlightsPerDay,
-  SeatOccupancyRates,
+  SeatOccupancyAnalytics,
+  SeatOccupancyRate,
   AverageLayoverTimes,
   FlightsBelowAveragePrice,
 } from './types/types';
@@ -75,23 +76,26 @@ export class AnalyticsService {
           f.airline,
           f.flight_id,
           f.flight_number,
-          EXTRACT(EPOCH FROM (f.arrival_time - f.departure_time)) / 3600 AS duration_hours,
-          RANK() OVER (PARTITION BY f.airline ORDER BY EXTRACT(EPOCH FROM (f.arrival_time - f.departure_time)) DESC) AS rank_desc,
-          RANK() OVER (PARTITION BY f.airline ORDER BY EXTRACT(EPOCH FROM (f.arrival_time - f.departure_time)) ASC) AS rank_asc,
+          f.duration,
           f.origin_airport_id,
-          f.destination_airport_id
+          f.destination_airport_id,
+          CASE 
+            WHEN ROW_NUMBER() OVER (ORDER BY f.duration DESC) <= 10 THEN 'longest'
+            WHEN ROW_NUMBER() OVER (ORDER BY f.duration ASC) <= 10 THEN 'shortest'
+          END AS flight_type
         FROM 
           "Flight" f
+        WHERE
+          f.status NOT IN ('Delayed', 'Cancelled')
       )
       SELECT
         rf.airline,
         rf.flight_id,
         rf.flight_number,
-        rf.duration_hours,
-        rf.rank_desc,
-        rf.rank_asc,
+        rf.duration,
         orig_airport.name AS origin_airport_name,
-        dest_airport.name AS destination_airport_name
+        dest_airport.name AS destination_airport_name,
+        rf.flight_type
       FROM
         ranked_flights rf
       JOIN
@@ -99,33 +103,30 @@ export class AnalyticsService {
       JOIN
         "Airport" dest_airport ON rf.destination_airport_id = dest_airport.airport_id
       WHERE 
-        rf.rank_desc = 1
-        OR rf.rank_asc = 1;
+        rf.flight_type IS NOT NULL
+      ORDER BY
+        CASE WHEN rf.flight_type = 'longest' THEN rf.duration END DESC,
+        CASE WHEN rf.flight_type = 'shortest' THEN rf.duration END ASC;
     `;
 
-    // Convertir BigInt a Number
-    const formattedResult = result.map((row) => ({
-      ...row,
-      duration_hours: Number(row.duration_hours),
-      rank_desc: Number(row.rank_desc),
-      rank_asc: Number(row.rank_asc),
-    }));
-
-    return formattedResult;
+    return result;
   }
 
-  async getPassengerCounts(): Promise<PassengerCounts[]> {
-    const result = await this.prisma.$queryRaw<PassengerCounts[]>`
+  async getPassengerCounts(): Promise<SeatCounts[]> {
+    const result = await this.prisma.$queryRaw<SeatCounts[]>`
       SELECT 
         f.flight_id,
         f.flight_number,
-        COUNT(bd.passenger_id) AS total_passengers,
-        AVG(COUNT(bd.passenger_id)) OVER () AS avg_passengers,
-        COUNT(bd.passenger_id) - AVG(COUNT(bd.passenger_id)) OVER () AS difference_from_avg
+        COUNT(s.seat_id) FILTER (WHERE s.available = false) AS total_occupied_seats,
+        AVG(COUNT(s.seat_id) FILTER (WHERE s.available = false)) OVER () AS avg_occupied_seats,
+        COUNT(s.seat_id) FILTER (WHERE s.available = false) - 
+          AVG(COUNT(s.seat_id) FILTER (WHERE s.available = false)) OVER () AS difference_from_avg
       FROM 
         "Flight" f
       JOIN 
-        "BookingDetail" bd ON f.flight_id = bd.flight_id
+        "Seat" s ON f.flight_id = s.flight_id
+      WHERE
+        f.status = 'completed'
       GROUP BY 
         f.flight_id
       ORDER BY
@@ -135,8 +136,8 @@ export class AnalyticsService {
     // Convertir BigInt a Number
     const formattedResult = result.map((row) => ({
       ...row,
-      total_passengers: Number(row.total_passengers),
-      avg_passengers: Number(row.avg_passengers),
+      total_occupied_seats: Number(row.total_occupied_seats),
+      avg_occupied_seats: Number(row.avg_occupied_seats),
       difference_from_avg: Number(row.difference_from_avg),
     }));
 
@@ -167,8 +168,8 @@ export class AnalyticsService {
     return formattedResult;
   }
 
-  async getSeatOccupancyRates(): Promise<SeatOccupancyRates[]> {
-    const result = await this.prisma.$queryRaw<SeatOccupancyRates[]>`
+  async getSeatOccupancyRates(): Promise<SeatOccupancyAnalytics> {
+    const result = await this.prisma.$queryRaw<SeatOccupancyRate[]>`
       SELECT 
         f.flight_id,
         f.flight_number,
@@ -178,16 +179,31 @@ export class AnalyticsService {
       JOIN 
         "Seat" s ON f.flight_id = s.flight_id
       GROUP BY 
-        f.flight_id;
+        f.flight_id
+      HAVING 
+        SUM(CASE WHEN s.available = false THEN 1 ELSE 0 END) * 1.0 / COUNT(s.seat_id) > 0
+      ORDER BY
+        seat_occupancy_rate DESC;
     `;
 
-    // Convertir BigInt a Number
-    const formattedResult = result.map((row) => ({
-      ...row,
-      seat_occupancy_rate: Number(row.seat_occupancy_rate),
-    }));
+    // Convertir BigInt a Number y calcular el promedio total
+    let totalOccupancy = 0;
+    const formattedResult = result.map((row) => {
+      const occupancyRate = Number(row.seat_occupancy_rate);
+      totalOccupancy += occupancyRate;
+      return {
+        ...row,
+        seat_occupancy_rate: occupancyRate,
+      };
+    });
 
-    return formattedResult;
+    const averageOccupancyRate =
+      formattedResult.length > 0 ? totalOccupancy / formattedResult.length : 0;
+
+    return {
+      flights: formattedResult,
+      average_occupancy_rate: Number(averageOccupancyRate.toFixed(4)),
+    };
   }
 
   async getAverageLayoverTimes(): Promise<AverageLayoverTimes[]> {

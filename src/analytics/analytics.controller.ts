@@ -32,11 +32,11 @@ export class AnalyticsController {
 
   @Get('longest-shortest-flights')
   @ApiOperation({
-    summary: 'Identificar los vuelos más largos y más cortos por aerolínea',
+    summary: 'Identificar los 10 vuelos más largos y los 10 más cortos',
   })
   @ApiResponse({
     status: 200,
-    description: 'Devuelve los vuelos más largos y más cortos por aerolínea',
+    description: 'Devuelve los 10 vuelos más largos y los 10 más cortos',
   })
   getLongestAndShortestFlights() {
     return this.analyticsService.getLongestAndShortestFlights();

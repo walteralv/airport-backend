@@ -5,6 +5,25 @@ export type AirportRanking = {
   rank: number;
 };
 
+export interface SeatOccupancyRate {
+  flight_id: number;
+  flight_number: string;
+  seat_occupancy_rate: number;
+}
+
+export interface SeatOccupancyAnalytics {
+  flights: SeatOccupancyRate[];
+  average_occupancy_rate: number;
+}
+
+export interface SeatCounts {
+  flight_id: number;
+  flight_number: string;
+  total_occupied_seats: number;
+  avg_occupied_seats: number;
+  difference_from_avg: number;
+}
+
 export type CountryFlightRanking = {
   country: string;
   outbound_flights: number;
